@@ -7,7 +7,7 @@ import client.android.fragments.state.DummyFragmentState;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.OptionsMenu;
 
-@EFragment
+@EFragment(R.layout.fragment_dummy_layout)
 @OptionsMenu(R.menu.menu_vide)
 public class DummyFragment extends AbstractFragment {
 
