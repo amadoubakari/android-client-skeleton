@@ -2,5 +2,5 @@
 <resources>
 
   <!-- nom de l'application -->
-  <string name="app_name">[Donnez un nom à votre application]</string>
+  <string name="app_name">Open source</string>
 </resources>
