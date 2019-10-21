@@ -474,4 +474,6 @@ public abstract class AbstractFragment extends Fragment {
     protected abstract void notifyEndOfUpdates();
 
     protected abstract void notifyEndOfTasks(boolean runningTasksHaveBeenCanceled);
+
+
 }

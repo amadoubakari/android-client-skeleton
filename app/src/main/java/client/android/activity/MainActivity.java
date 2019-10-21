@@ -7,6 +7,7 @@ import client.android.architecture.core.AbstractFragment;
 import client.android.architecture.custom.Session;
 import client.android.dao.service.Dao;
 import client.android.dao.service.IDao;
+import client.android.fragments.behavior.SplashScreenFragment_;
 import client.android.fragments.behavior.TestFragment_;
 
 import org.androidannotations.annotations.Bean;
@@ -43,7 +44,7 @@ public class MainActivity extends AbstractActivity {
   @Override
   protected AbstractFragment[] getFragments() {
     // todo : définir les fragments ici
-    return new AbstractFragment[]{new TestFragment_()};
+    return new AbstractFragment[]{new SplashScreenFragment_(),new TestFragment_()};
   }
 
 
