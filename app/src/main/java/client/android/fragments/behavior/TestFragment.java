@@ -26,6 +26,7 @@ public class TestFragment extends AbstractFragment {
 
     @Override
     protected void initFragment(CoreState previousState) {
+        ((AppCompatActivity) mainActivity).getSupportActionBar().show();
     }
 
     @Override
