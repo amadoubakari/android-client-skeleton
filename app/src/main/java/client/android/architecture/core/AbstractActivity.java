@@ -1,11 +1,16 @@
 package client.android.architecture.core;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
+import com.flys.common_tools.utils.CustomTypefaceSpan;
+import com.flys.common_tools.utils.Utils;
 import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -13,16 +18,22 @@ import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import client.android.R;
 import client.android.architecture.custom.CustomTabLayout;
 import client.android.architecture.custom.IMainActivity;
 import client.android.architecture.custom.Session;
 import client.android.dao.service.IDao;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -55,6 +66,8 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
     private DrawerLayout drawerLayout;
     //Action sur l'icone du menu principal
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    //image du profil
+    private CircleImageView profile;
 
     // constructeur
     public AbstractActivity() {
@@ -229,6 +242,33 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
         if (session.getAction() == ISession.Action.NONE) {
             navigateToView(getFirstView(), ISession.Action.NONE);
         }
+
+        //Action sur les éléments de menu
+        //Navigation drawer
+        NavigationView navigationView = findViewById(R.id.navigation);
+        //Navigation drawer
+        View headerNavView = navigationView.getHeaderView(0);
+
+       //Nous appliquons le même style aux éléments de menu
+        Utils.applyFontStyleToMenu(this,navigationView.getMenu(), "fonts/Roboto-Thin.ttf");
+
+        profile = headerNavView.findViewById(R.id.profile_image);
+        navigationView.setNavigationItemSelectedListener(
+                menuItem -> {
+                    // set item as selected to persist highlight
+                    menuItem.setChecked(true);
+                    // close drawer when item is tapped
+                    switch (menuItem.getItemId()) {
+                        case R.id.menu_home:
+                            Toast.makeText(this,"Home menu",Toast.LENGTH_LONG).show();
+                            break;
+                        default:
+                            break;
+                    }
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    return true;
+                });
+
         // on passe la main à l'activité fille
         onCreateActivity();
     }
