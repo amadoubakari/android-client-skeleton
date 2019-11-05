@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:height="5dp"
+        android:hint="Un mot pour accompagner votre partage?"
+        android:inputType="textMultiLine"
+        android:lines="50"
+        android:maxLines="100"
+        android:minLines="3"
+        android:overScrollMode="always"
+        android:paddingLeft="15dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textSize="18sp" />
+
+</LinearLayout>

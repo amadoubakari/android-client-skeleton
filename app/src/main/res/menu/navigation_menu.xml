@@ -21,6 +21,11 @@
             app:itemTextAppearance="@style/menu_font_style"
             android:title="Connexion" />
         <item
+            android:id="@+id/menu_recommander"
+            android:icon="@drawable/ic_people_outline_24px"
+            app:itemTextAppearance="@style/menu_font_style"
+            android:title="Recommander" />
+        <item
             android:id="@+id/subheader"
             android:title="Sous Menu">
             <menu>
