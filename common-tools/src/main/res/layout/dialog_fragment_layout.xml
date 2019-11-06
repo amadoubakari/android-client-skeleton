@@ -8,8 +8,9 @@
     <EditText
         android:id="@+id/data"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:height="5dp"
+        android:gravity="top"
         android:hint="Un mot pour accompagner votre partage?"
         android:inputType="textMultiLine"
         android:lines="50"
@@ -20,6 +21,6 @@
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
         android:scrollHorizontally="false"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
