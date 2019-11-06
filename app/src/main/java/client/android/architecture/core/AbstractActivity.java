@@ -3,6 +3,8 @@ package client.android.architecture.core;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
+import com.flys.common_tools.dialog.AbstractDialogActivity;
+import com.flys.common_tools.dialog.AbstractDialogFragmentInterface;
 import com.flys.common_tools.utils.CustomTypefaceSpan;
 import com.flys.common_tools.utils.Utils;
 import com.google.android.material.appbar.AppBarLayout;
@@ -41,7 +43,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 
-public abstract class AbstractActivity extends AppCompatActivity implements IMainActivity {
+public abstract class AbstractActivity extends AppCompatActivity implements IMainActivity, AbstractDialogFragmentInterface {
     // couche [DAO]
     private IDao dao;
     // la session
@@ -262,6 +264,9 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
                         case R.id.menu_home:
                             Toast.makeText(this,"Home menu",Toast.LENGTH_LONG).show();
                             break;
+                        case R.id.menu_recommander:
+                            showEditDialog();
+                            break;
                         default:
                             break;
                     }
@@ -338,6 +343,18 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //Récupération du texte issu de la boite de dialogue
+    @Override
+    public void receivedDate(String data) {
+        Utils.shareText(this, "Dubun GUIZIGA", data + "  https://play.google.com/store/apps/details?id=com.sprintpaycommunity", "Recommandation de l'application.");
+    }
+
+    private void showEditDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        AbstractDialogActivity dialogActivity = new AbstractDialogActivity("Recommandation", R.drawable.baseline_account_circle_white_48dp,R.style.AlertDialogTheme);
+        dialogActivity.show(fm, "fragment_edit_name");
     }
 
     // le gestionnaire de fragments --------------------------------
