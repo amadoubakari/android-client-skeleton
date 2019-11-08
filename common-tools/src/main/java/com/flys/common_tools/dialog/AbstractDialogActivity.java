@@ -23,6 +23,7 @@ public class AbstractDialogActivity extends DialogFragment {
     private String title;
     private int icon;
     private int theme;
+    private int bodyStyleAppearance;
     MaterialAlertDialogBuilder builder;
 
     public AbstractDialogActivity(String title, int icon) {
@@ -35,7 +36,12 @@ public class AbstractDialogActivity extends DialogFragment {
         this.icon = icon;
         this.theme = theme;
     }
-
+    public AbstractDialogActivity(String title, int icon, int theme,int bodyStyleAppearance) {
+        this.title = title;
+        this.icon = icon;
+        this.theme = theme;
+        this.bodyStyleAppearance=bodyStyleAppearance;
+    }
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -49,6 +55,10 @@ public class AbstractDialogActivity extends DialogFragment {
         // Inflate and set the layout for the dialog
         View view = inflater.inflate(R.layout.dialog_fragment_layout, null);
         data = view.findViewById(R.id.data);
+
+        if(bodyStyleAppearance>0){
+            data.setTextAppearance(bodyStyleAppearance);
+        }
         //Mise en forme de l'entete et de l'icone de l'application
         builder.setTitle(title);
         builder.setIcon(icon);
