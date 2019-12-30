@@ -2,6 +2,7 @@ package com.flys.common_tools.utils;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Environment;
@@ -10,14 +11,24 @@ import android.text.SpannableString;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.io.Serializable;
+import java.io.StringWriter;
+import java.io.Writer;
 
 public class Utils implements Serializable {
 
     /**
      * apply a font on a menu
+     *
      * @param context
      * @param menu
      * @param fontPath path to the font
@@ -41,7 +52,6 @@ public class Utils implements Serializable {
     }
 
     /**
-     *
      * @param context
      * @param mi
      * @param fontPath
@@ -65,7 +75,7 @@ public class Utils implements Serializable {
     public static void shareText(Context context, String subject, String text, String title) {
         Intent share = new Intent(android.content.Intent.ACTION_SEND);
         share.setType("text/plain");
-        share.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT );
+        share.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
 
         // Add data to the intent, the receiving app will decide
         // what to do with it.
@@ -81,7 +91,6 @@ public class Utils implements Serializable {
     //Elle permet de partager un fichier
 
     /**
-     *
      * @param context
      */
     public static void shareFile(Context context) {
@@ -102,6 +111,48 @@ public class Utils implements Serializable {
         share.putExtra(Intent.EXTRA_STREAM, uri);
 
         context.startActivity(Intent.createChooser(share, "Share Image!"));
+    }
+
+    /**
+     * Read html file from assets
+     *
+     * @param filename
+     * @param webView
+     */
+    public static void readHtmlFileFromAssets(Context context,String filename, WebView webView) {
+
+        WebSettings webSetting = webView.getSettings();
+        webSetting.setJavaScriptEnabled(true);
+        webSetting.setDisplayZoomControls(true);
+
+        AssetManager mgr = context.getAssets();
+        try {
+            InputStream in = mgr.open(filename, AssetManager.ACCESS_BUFFER);
+            String htmlContentInStringFormat = StreamToString(in);
+            in.close();
+            webView.loadDataWithBaseURL(null, htmlContentInStringFormat, "text/html", "utf-8", null);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static String StreamToString(InputStream in) throws IOException{
+
+        if(in == null) {
+            return "";
+        }
+        Writer writer = new StringWriter();
+        char[] buffer = new char[1024];
+        try {
+            Reader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+            int n;
+            while ((n = reader.read(buffer)) != -1) {
+                writer.write(buffer, 0, n);
+            }
+        } finally {
+        }
+        return writer.toString();
     }
 
 }
