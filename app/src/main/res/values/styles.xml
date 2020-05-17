@@ -44,6 +44,9 @@
     <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
+    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:elevation">10dp</item>
+    </style>
 
     <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:textColor">@color/red_700</item>
@@ -84,4 +87,10 @@
     <style name="ButtonBarStyle">
         <item name="android:background">#000000</item>
     </style>
+    <!--Notification dialog style-->
+    <style name="NotificationTitleDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+
+    </style>
+
+
 </resources>

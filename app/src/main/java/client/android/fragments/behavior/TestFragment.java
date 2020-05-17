@@ -1,9 +1,11 @@
 package client.android.fragments.behavior;
 
-import android.view.WindowManager;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.flys.common_tools.dialog.MaterialNotificationDialog;
+import com.flys.common_tools.domain.NotificationData;
+
+import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.OptionsMenu;
 
@@ -13,7 +15,16 @@ import client.android.architecture.custom.CoreState;
 
 @EFragment(R.layout.fragment_dummy_layout)
 @OptionsMenu(R.menu.menu_vide)
-public class TestFragment extends AbstractFragment {
+public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer {
+    MaterialNotificationDialog dialog;
+
+    @Click(R.id.Splashscreen)
+    void splas() {
+        dialog = new MaterialNotificationDialog(activity,
+                new NotificationData("Dubun Guiziga", "Voudriez-vous quittez l'application?", "OUI", "NO", activity.getDrawable(R.drawable.ic_people_outline_24px)),this);
+        dialog.show(getActivity().getSupportFragmentManager(), "data_notif");
+    }
+
     @Override
     public CoreState saveFragment() {
         return new CoreState();
@@ -27,6 +38,7 @@ public class TestFragment extends AbstractFragment {
     @Override
     protected void initFragment(CoreState previousState) {
         ((AppCompatActivity) mainActivity).getSupportActionBar().show();
+
     }
 
     @Override
@@ -52,5 +64,15 @@ public class TestFragment extends AbstractFragment {
     @Override
     protected void notifyEndOfTasks(boolean runningTasksHaveBeenCanceled) {
 
+    }
+
+    @Override
+    public void okButtonAction() {
+        activity.finish();
+    }
+
+    @Override
+    public void noButtonAction() {
+        dialog.dismiss();
     }
 }
