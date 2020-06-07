@@ -1,0 +1,8 @@
+
+G
+java:S1068"1Remove this unused "entityClasses" private field.(§Þóð
+V	java:S125%"<This block of commented-out lines of code should be removed.(´ëû¸þÿÿÿÿ
+>
+java:S1148*"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+r
+java:S1450"\Remove the "entityClasses" field and declare it as a local variable in the relevant methods.(§Þóð

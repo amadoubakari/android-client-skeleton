@@ -1,0 +1,19 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇÚÊj
+>
+java:S11486"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+>
+java:S1148d"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+E
+java:S1068"/Remove this unused "entityClass" private field.(›ºˆ
+>
+java:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Q	java:S125J"<This block of commented-out lines of code should be removed.(…Þßÿ
+?
+java:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+>
+java:S1148v"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(€¨ÆŸúÿÿÿÿ
+>
+java:S1148L"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

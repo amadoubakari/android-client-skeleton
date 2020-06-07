@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +22,7 @@ public class MaterialNotificationDialog extends DialogFragment {
     private Context context;
     private NotificationData notificationData;
     private NotificationButtonOnclickListeneer buttonOnclickListeneer;
+
 
     public MaterialNotificationDialog() {
     }
@@ -40,16 +42,12 @@ public class MaterialNotificationDialog extends DialogFragment {
         this.buttonOnclickListeneer = buttonOnclickListeneer;
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.notification_dialog_fragment, container, false);
-    }
-
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(this.context, notificationData.getResourcesThemes());
+        //Custom view
+        //dialogBuilder.setView(R.layout.notification_dialog_fragment);
         //Mise en forme de l'entete et de l'icone de l'application
         dialogBuilder.setIcon(notificationData.getIcon());
         dialogBuilder.setTitle(notificationData.getTitle());
@@ -70,9 +68,9 @@ public class MaterialNotificationDialog extends DialogFragment {
     }
 
     public interface NotificationButtonOnclickListeneer {
-        public void okButtonAction();
+        void okButtonAction();
 
-        public void noButtonAction();
+        void noButtonAction();
     }
 
 }

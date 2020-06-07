@@ -1,0 +1,11 @@
+
+C
+java:S1172>"&Remove these unused method parameters.(ı§„Ô8Æ‹šÜ§.
+]	java:S1252"<This block of commented-out lines of code should be removed.(úÕÄÆÿÿÿÿÿ8÷½¥Ü§.
+P
+java:S1128	"3Remove this unused import 'android.view.ViewGroup'.(‹îá8åî™Ü§.
+Y
+java:S1128
+"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8Œ£šÜ§.
+U
+java:S1128"8Remove this unused import 'android.view.LayoutInflater'.(À¯ÑÇ8åî™Ü§.
