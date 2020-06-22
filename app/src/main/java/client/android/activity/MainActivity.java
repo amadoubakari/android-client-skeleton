@@ -1,9 +1,10 @@
 package client.android.activity;
 
+import android.content.DialogInterface;
 import android.util.Log;
 
-import com.flys.common_tools.dialog.MaterialNotificationDialog;
-import com.flys.common_tools.domain.NotificationData;
+import com.flys.tools.dialog.MaterialNotificationDialog;
+import com.flys.tools.domain.NotificationData;
 
 import client.android.R;
 import client.android.architecture.core.AbstractActivity;
@@ -84,13 +85,14 @@ public class MainActivity extends AbstractActivity implements MaterialNotificati
         }
     }
 
+
     @Override
-    public void okButtonAction() {
-        super.onBackPressed();
+    public void okButtonAction(DialogInterface dialog, int id) {
+
     }
 
     @Override
-    public void noButtonAction() {
-        this.dialog.dismiss();
+    public void noButtonAction(DialogInterface dialog, int id) {
+
     }
 }

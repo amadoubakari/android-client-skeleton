@@ -91,6 +91,10 @@
     <style name="NotificationTitleDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
 
     </style>
-
+    <style name="popupmenu" parent="Base.Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/blue_400</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:popupElevation">50dp</item>
+    </style>
 
 </resources>

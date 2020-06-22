@@ -53,5 +53,10 @@ public class NotificationFragment extends Fragment implements NotificationAdapte
         Toast.makeText(getContext(), "notificiation " + position, Toast.LENGTH_LONG).show();
     }
 
+    @Override
+    public void onMenuListener(View v, int position) {
+
+    }
+
 
 }

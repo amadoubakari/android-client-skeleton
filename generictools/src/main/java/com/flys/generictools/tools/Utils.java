@@ -2,9 +2,14 @@ package com.flys.generictools.tools;
 
 import android.content.Context;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.flys.generictools.dao.db.DBPersistence;
+import com.flys.generictools.dao.db.Entities;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
+import java.util.List;
 
 public class Utils implements Serializable {
 
@@ -29,5 +34,23 @@ public class Utils implements Serializable {
             return null;
         }
         return json;
+    }
+
+    /**
+     *
+     * @param context
+     * @return
+     */
+    public static final DBPersistence getPersistanceData(Context context) {
+        DBPersistence dbPersistence = new DBPersistence();
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonInput = Utils.loadJSONFromAsset(context, "persistence.json");
+        try {
+            dbPersistence = mapper.readValue(jsonInput, DBPersistence.class);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return dbPersistence;
     }
 }

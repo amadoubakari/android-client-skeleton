@@ -20,9 +20,7 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
 
     @Override
     public Dao<User, Long> getDao() {
-        List<Class<?>> entityClasses = new ArrayList<>();
-        entityClasses.add(User.class);
-        databaseHelper = new DatabaseHelper(ApplicationContext.getContext(), R.raw.ormlite_config, entityClasses, "Skeleton.db",1 );
+        databaseHelper = new DatabaseHelper(ApplicationContext.getContext(), R.raw.ormlite_config );
         try {
             return (Dao<User, Long>) databaseHelper.getDao(getEntityClassManaged());
         } catch (SQLException e) {

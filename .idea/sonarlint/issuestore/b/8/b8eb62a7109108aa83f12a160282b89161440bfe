@@ -1,13 +1,22 @@
 
-X	java:S1256"<This block of commented-out lines of code should be removed.(¬İ÷8¡„ÿ¦¦.
-—
-java:S1186a"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸ø®é
+¤
+java:S1186­"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²‘Şàüÿÿÿÿ8«Å±‘«.
+
+java:S1186²"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ªµ‘s8«Å±‘«.
+„
+java:S14506"bRemove the "notificationAdapter" field and declare it as a local variable in the relevant methods.(â…«¦ûÿÿÿÿ8¾±¯‘«.
 E
-java:S1148V"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8±¡Ç¨.
-]	java:S125/"<This block of commented-out lines of code should be removed.(ÚÇ‘³ıÿÿÿÿ8Õì¿ˆ§.
-—
-java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ëä–
-—
-java:S1186f"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ¦ÓÁ
-œ
-java:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²‘Şàüÿÿÿÿ
+java:S1148j"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºÿÃì¬.
+X	java:S125@"<This block of commented-out lines of code should be removed.(õíŸÿ8¥Âôè¬.
+Ÿ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ëä–8«Å±‘«.
+^	java:S125Á"<This block of commented-out lines of code should be removed.(ÚÅ§Âÿÿÿÿÿ8á§Ñ›¬.
+s	java:S117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜“Æ…ùÿÿÿÿ8òêÀ›¬.
+Ÿ
+java:S1186£"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸ø®é8«Å±‘«.
+¤
+java:S1186·"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á£®şÿÿÿÿ8«Å±‘«.
+Ÿ
+java:S1186¨"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ¦ÓÁ8«Å±‘«.
+]	java:S125:"<This block of commented-out lines of code should be removed.(ÚÇ‘³ıÿÿÿÿ8ÚÙºî¬.
+X	java:S125I"<This block of commented-out lines of code should be removed.(¬İ÷8«Å±‘«.

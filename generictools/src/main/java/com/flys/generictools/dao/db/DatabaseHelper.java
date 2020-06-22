@@ -4,12 +4,15 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.flys.generictools.tools.Utils;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -29,9 +32,9 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
 
     List<Class<?>> classList;
 
-    public DatabaseHelper(Context context, int ormlite_config, List<Class<?>> classList, String DATABASE_NAME, int DATABASE_VERSION) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION, ormlite_config);
-        this.classList = classList;
+    public DatabaseHelper(Context context, int ormlite_config) {
+        super(context, Utils.getPersistanceData(context).getDatabaseName(), null, Utils.getPersistanceData(context).getDatabaseVersion(), ormlite_config);
+        this.classList = Utils.getPersistanceData(context).getEntities();
     }
 
     /**
@@ -42,9 +45,9 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
     public void onCreate(SQLiteDatabase db, ConnectionSource connectionSource) {
         try {
             Log.i(DatabaseHelper.class.getName(), "onCreate");
-            for (Class<?> entityClass:classList
-                 ) {
-                TableUtils.createTableIfNotExists(connectionSource,entityClass);
+            for (Class<?> entityClass : classList
+            ) {
+                TableUtils.createTableIfNotExists(connectionSource, entityClass);
             }
 
         } catch (SQLException e) {
@@ -61,8 +64,8 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, ConnectionSource connectionSource, int oldVersion, int newVersion) {
         try {
             Log.i(DatabaseHelper.class.getName(), "onUpgrade");
-            for (Class<?> entityClass:classList
-                    ) {
+            for (Class<?> entityClass : classList
+            ) {
                 TableUtils.dropTable(connectionSource, entityClass, true);
             }
 
@@ -74,8 +77,16 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
         }
     }
 
-    //Database init
-/*    List<Class<?>>  init(){
-        return null;
+   /* public List<Class<?>> getEntityClasses(Context context) {
+        Entities entities = new Entities();
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonInput = Utils.loadJSONFromAsset(context, "persistence.json");
+        try {
+            entities = mapper.readValue(jsonInput, Entities.class);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return entities.getEntities();
     }*/
 }

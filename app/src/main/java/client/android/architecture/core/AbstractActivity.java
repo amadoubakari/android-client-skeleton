@@ -1,12 +1,10 @@
 package client.android.architecture.core;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 
-import com.flys.common_tools.dialog.AbstractDialogActivity;
-import com.flys.common_tools.dialog.AbstractDialogFragmentInterface;
-import com.flys.common_tools.utils.CustomTypefaceSpan;
-import com.flys.common_tools.utils.Utils;
+import com.flys.tools.dialog.AbstractDialogActivity;
+import com.flys.tools.dialog.AbstractDialogFragmentInterface;
+import com.flys.tools.utils.Utils;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -20,12 +18,8 @@ import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.text.Spannable;
-import android.text.SpannableString;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;

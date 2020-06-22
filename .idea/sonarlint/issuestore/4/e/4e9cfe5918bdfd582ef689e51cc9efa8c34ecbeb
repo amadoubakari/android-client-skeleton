@@ -1,0 +1,8 @@
+
+M
+java:S1128"0Remove this unused import 'android.media.Image'.(ëïøÂ8†›‚™¬.
+]	java:S125["<This block of commented-out lines of code should be removed.(ÒÉì½üÿÿÿÿ8ÀÓ î¬.
+c
+java:S1128"ARemove this unused import 'androidx.fragment.app.DialogFragment'.(ƒæ÷£ùÿÿÿÿ8¼³§î¬.
+s
+java:S1905<"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@63c3bee3".(Ğ«öŞ8û¨Çî¬.

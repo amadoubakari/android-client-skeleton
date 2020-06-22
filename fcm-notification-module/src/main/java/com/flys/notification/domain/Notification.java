@@ -1,12 +1,30 @@
 package com.flys.notification.domain;
 
-import java.io.Serializable;
+import com.j256.ormlite.field.DataType;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Date;
+
+@DatabaseTable(tableName = "notification")
 public class Notification implements Serializable {
 
+    @DatabaseField(generatedId = true)
+    private Long id;
+    @DatabaseField
     private String title;
+    @DatabaseField
     private String subTitle;
+    @DatabaseField
     private String content;
+    @DatabaseField
+    private String imageUrl;
+    @DatabaseField (dataType=DataType.DATE_STRING,canBeNull = false)
+    private Date date;
+
+    private byte[] image;
 
     public Notification() {
     }
@@ -15,6 +33,30 @@ public class Notification implements Serializable {
         this.title = title;
         this.subTitle = subTitle;
         this.content = content;
+    }
+
+    public Notification(String title, String subTitle, String content, String imageUrl) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.content = content;
+        this.imageUrl = imageUrl;
+    }
+
+    public Notification(String title, String subTitle, String content, String imageUrl, byte[] image) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.content = content;
+        this.imageUrl = imageUrl;
+        this.image = image;
+    }
+
+    public Notification(String title, String subTitle, String content, String imageUrl, Date date, byte[] image) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.content = content;
+        this.imageUrl = imageUrl;
+        this.date = date;
+        this.image = image;
     }
 
     public String getTitle() {
@@ -39,5 +81,49 @@ public class Notification implements Serializable {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Notification{" +
+                "title='" + title + '\'' +
+                ", subTitle='" + subTitle + '\'' +
+                ", content='" + content + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", date=" + date +
+                ", image=" + Arrays.toString(image) +
+                '}';
     }
 }

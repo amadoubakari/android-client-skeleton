@@ -1,13 +1,24 @@
 package client.android.fragments.behavior;
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.fragment.app.DialogFragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.flys.common_tools.dialog.MaterialNotificationDialog;
-import com.flys.common_tools.domain.NotificationData;
+import com.flys.notification.dialog.NotificationDetailsDialogFragment;
+import com.flys.tools.dialog.MaterialNotificationDialog;
 import com.flys.generictools.dao.daoException.DaoException;
+import com.flys.notification.adapter.NotificationAdapter;
 import com.flys.notification.domain.Notification;
-import com.flys.notification.utils.Utils;
 
 
 import org.androidannotations.annotations.Bean;
@@ -17,6 +28,7 @@ import org.androidannotations.annotations.OptionsMenu;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import client.android.R;
@@ -28,22 +40,30 @@ import client.android.dao.db.UserDaoImpl;
 
 @EFragment(R.layout.fragment_dummy_layout)
 @OptionsMenu(R.menu.menu_vide)
-public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer {
+public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer, NotificationAdapter.NotificationOnclickListener {
 
     @ViewById(R.id.recyclerview)
     RecyclerView recyclerView;
 
     @Bean(UserDaoImpl.class)
     protected UserDao userDao;
+    @ViewById(R.id.Splashscreen)
+    protected TextView msg;
 
     MaterialNotificationDialog dialog;
     List<Notification> notifications;
+    private NotificationAdapter notificationAdapter;
 
     @Click(R.id.Splashscreen)
     void splas() {
-        dialog = new MaterialNotificationDialog(activity,
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("notification", new Notification("title", "subtitle", "context", null, null));
+        NotificationDetailsDialogFragment configDialogFragment = NotificationDetailsDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null));
+        configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
+        configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
+       /* dialog = new MaterialNotificationDialog(activity,
                 new NotificationData("Dubun Guiziga", "Vvoudriez-vous quittez l'application?", "OUI", "NO", activity.getDrawable(R.drawable.ic_people_outline_24px)), this);
-        dialog.show(getActivity().getSupportFragmentManager(), "data_notif");
+        dialog.show(getActivity().getSupportFragmentManager(), "data_notif");*/
         /*Bundle bundle=new Bundle();
          */
         /*List<Notification> notifications = new ArrayList<>();
@@ -81,10 +101,46 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
     protected void initView(CoreState previousState) {
         // Create new fragment and transaction
         try {
-            userDao.save(new User("AMADOU BAKARI"));
+            User user = userDao.save(new User("AMADOU BAKARI"));
+            msg.setText(userDao.findById(user.getId()).getNom());
         } catch (DaoException e) {
             e.printStackTrace();
         }
+        notifications = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            notifications.add(new Notification("Dubun Guiziga", "Animaux en Guiziga", "<h2>Languages</h2>\n" +
+                    "  <ul>\n" +
+                    "    <li>English</li>\n" +
+                    "    <li>Spanish</li>\n" +
+                    "    <li>Japanese</li>\n" +
+                    "  </ul>\n" +
+                    "  <h2>Counting in English</h2>\n" +
+                    "  <ol>\n" +
+                    "    <li>one</li>\n" +
+                    "    <li>two</li>\n" +
+                    "    <li>three</li>\n" +
+                    "  </ol>\n" +
+                    "  <h2>Counting in Other Languages</h2>\n" +
+                    "  <ul>\n" +
+                    "    <li>Spanish\n" +
+                    "      <ol>\n" +
+                    "        <li>uno</li>\n" +
+                    "        <li>dos</li>\n" +
+                    "        <li>tres</li>\n" +
+                    "      </ol>\n" +
+                    "    </li>\n" +
+                    "    <li>Japanese\n" +
+                    "      <ol>\n" +
+                    "        <li>ichi</li>\n" +
+                    "        <li>ni</li>\n" +
+                    "        <li>san</li>\n" +
+                    "      </ol>      \n" +
+                    "    </li>\n" +
+                    "  </ul>", null, new Date(), null));
+        }
+        notificationAdapter = new NotificationAdapter(activity, notifications, this);
+        recyclerView.setLayoutManager(new LinearLayoutManager(activity));
+        recyclerView.setAdapter(notificationAdapter);
 
     }
 
@@ -109,14 +165,47 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
     }
 
     @Override
-    public void okButtonAction() {
-        activity.finish();
+    public void okButtonAction(DialogInterface dialog, int id) {
+
     }
 
     @Override
-    public void noButtonAction() {
-        dialog.dismiss();
+    public void noButtonAction(DialogInterface dialog, int id) {
+
     }
 
+    public boolean showMenu(Context context, View anchor, int custom_menu) {
+        PopupMenu popup = new PopupMenu(context, anchor);
+        popup.getMenuInflater().inflate(custom_menu, popup.getMenu());
+        popup.setOnMenuItemClickListener(menuItem -> {
+            switch (menuItem.getItemId()) {
+                case R.id.option_menu_share:
+                    //Utils.shareText(context, "ƁIMUTOHO MIPAL", verset.getTitre().getChapitre().getNom().substring(0, 3) + " " + verset.getTitre().getChapitre().getNumero() + ":" + verset.getNumero() + "\n" + verset.getDescription(), "ƁIMUTOHO MIPAL");
+                    break;
+                case R.id.option_menu_mark:
+                    Toast.makeText(context, "Marquer", Toast.LENGTH_LONG).show();
+                    break;
+                default:
+                    break;
+            }
+            return false;
+        });
+        popup.show();
+        return true;
+    }
 
+    @Override
+    public void onClickListener(int position) {
+        NotificationDetailsDialogFragment configDialogFragment = NotificationDetailsDialogFragment.newInstance(notifications.get(position));
+        View view = configDialogFragment.getView();
+        ImageView imageView=view.findViewById(R.id.notificiation_dialog_skip);
+        imageView.setOnClickListener(v -> configDialogFragment.dismiss());
+        configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
+        configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
+    }
+
+    @Override
+    public void onMenuListener(View v, int position) {
+
+    }
 }

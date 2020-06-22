@@ -1,0 +1,13 @@
+
+d
+java:S1128"BRemove this unused import 'com.flys.generictools.dao.db.Entities'.(²â÷üÿÿÿÿ8ü„Ô£ª.
+9
+java:S1148!"#Use a logger to log this exception.(Ç’Çê
+E
+java:S11484"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8²Ä£ª.
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8õÑ£ª.
+O
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(Şİ½
+e
+java:S2674"JCheck the return value of the "read" call to see how many bytes were read.(ë¥áïøÿÿÿÿ
