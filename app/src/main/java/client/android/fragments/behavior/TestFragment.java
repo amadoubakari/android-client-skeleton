@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.flys.notification.dialog.DialogStyle;
-import com.flys.notification.dialog.NotificationDetailsDialogFragment;
 import com.flys.tools.dialog.MaterialNotificationDialog;
 import com.flys.generictools.dao.daoException.DaoException;
 import com.flys.notification.adapter.NotificationAdapter;
@@ -38,7 +37,7 @@ import client.android.dao.db.User;
 import client.android.dao.db.UserDao;
 import client.android.dao.db.UserDaoImpl;
 
-import com.flys.notification.dialog.ConfigDialogFragment;
+import com.flys.notification.dialog.NotificationDetailsDialogFragment;
 
 @EFragment(R.layout.fragment_dummy_layout)
 @OptionsMenu(R.menu.menu_vide)
@@ -200,14 +199,14 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
     }
 
     @Override
-    public void onClickListener(int position) {
-        ConfigDialogFragment configDialogFragment = ConfigDialogFragment.newInstance(notifications.get(position),new DialogStyle(activity.getColor(R.color.blue_300)));
-        configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
-        configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
+    public void onButtonClickListener(int position) {
+        NotificationDetailsDialogFragment notificationDetailsDialogFragment = NotificationDetailsDialogFragment.newInstance(notifications.get(position),new DialogStyle(activity.getColor(R.color.blue_300)));
+        notificationDetailsDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
+        notificationDetailsDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
     }
 
     @Override
-    public void onMenuListener(View v, int position) {
+    public void onMenuClickListener(View v, int position) {
 
     }
 }

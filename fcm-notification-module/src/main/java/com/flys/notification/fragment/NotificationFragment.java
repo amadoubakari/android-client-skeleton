@@ -49,12 +49,12 @@ public class NotificationFragment extends Fragment implements NotificationAdapte
     }
 
     @Override
-    public void onClickListener(int position) {
+    public void onButtonClickListener(int position) {
         Toast.makeText(getContext(), "notificiation " + position, Toast.LENGTH_LONG).show();
     }
 
     @Override
-    public void onMenuListener(View v, int position) {
+    public void onMenuClickListener(View v, int position) {
 
     }
 

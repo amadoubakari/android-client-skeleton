@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.text.HtmlCompat;
@@ -64,12 +63,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     private void toggleSectionText(ImageView view, View lytExpandText,NestedScrollView nested_scroll_view) {
         boolean show = toggleArrow(view);
         if (show) {
-            ViewAnimation.expand(lytExpandText, new ViewAnimation.AnimListener() {
-                @Override
-                public void onFinish() {
-                    Tools.nestedScrollTo(nested_scroll_view, lytExpandText);
-                }
-            });
+            ViewAnimation.expand(lytExpandText, () -> Tools.nestedScrollTo(nested_scroll_view, lytExpandText));
         } else {
             ViewAnimation.collapse(lytExpandText);
         }
@@ -125,17 +119,17 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         @Override
         public void onClick(View v) {
             if (v.getId() == R.id.menu) {
-                notificationOnclickListener.onMenuListener(v, getAdapterPosition());
+                notificationOnclickListener.onMenuClickListener(v, getAdapterPosition());
             } else if (v.getId() == R.id.button) {
-                notificationOnclickListener.onClickListener(getAdapterPosition());
+                notificationOnclickListener.onButtonClickListener(getAdapterPosition());
             }
         }
     }
 
     public interface NotificationOnclickListener {
-        void onClickListener(int position);
+        void onButtonClickListener(int position);
 
-        void onMenuListener(View v, int position);
+        void onMenuClickListener(View v, int position);
     }
 
     /**
