@@ -1,9 +1,9 @@
 
-q
-java:S1450"TRemove the "image" field and declare it as a local variable in the relevant methods.(İÈ½8Ç·ê¬.
-n
-java:S1450"SRemove the "save" field and declare it as a local variable in the relevant methods.(€­™Šıÿÿÿÿ
-p
-java:S1450"TRemove the "title" field and declare it as a local variable in the relevant methods.(ı«¶h8¤Ç’í¬.
+X	java:S125"<This block of commented-out lines of code should be removed.(šá’©8ËúËŒ®.
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8¼ıÈ“®.
+^
+java:S1128"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8ÿ¿ú®.
 x
-java:S1450"[Remove the "notification" field and declare it as a local variable in the relevant methods.(ˆ—¿8Ùê¬.
+java:S1450"[Remove the "notification" field and declare it as a local variable in the relevant methods.(ˆ—¿8Ùê¬.
+]	java:S125"<This block of commented-out lines of code should be removed.(èò¸Ôøÿÿÿÿ8¸‚®.

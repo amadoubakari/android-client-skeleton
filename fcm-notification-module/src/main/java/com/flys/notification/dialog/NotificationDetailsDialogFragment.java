@@ -1,13 +1,16 @@
 package com.flys.notification.dialog;
 
+import android.content.DialogInterface;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
@@ -20,18 +23,18 @@ import com.flys.notification.domain.Notification;
  * Created by User on 19/10/2018.
  */
 
-public class NotificationDetailsDialogFragment extends DialogFragment {
+public class NotificationDetailsDialogFragment extends DialogFragment{
 
-    private ImageView save;
+    //private ImageView save;
     private Notification notification;
-    private ImageView image;
-    private TextView title;
+    //private ImageView image;
+    //private TextView title;
 
     public static NotificationDetailsDialogFragment newInstance(Notification data) {
         NotificationDetailsDialogFragment frag = new NotificationDetailsDialogFragment();
         //Put sérialization
-        Bundle bundle= new Bundle();
-        bundle.putSerializable("notification",data);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("notification", data);
         frag.setArguments(bundle);
         return frag;
     }
@@ -59,9 +62,9 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         // Get field from view
-        save = view.findViewById(R.id.save);
-        image = view.findViewById(R.id.image);
-        title=  view.findViewById(R.id.title);
+        ImageView save = view.findViewById(R.id.notificiation_dialog_skip);
+        ImageView image = view.findViewById(R.id.image);
+        TextView title = view.findViewById(R.id.title);
         // Fetch arguments from bundle and set title
         notification = (Notification) getArguments().getSerializable("notification");
         getDialog().setTitle(notification.getTitle());
@@ -72,8 +75,7 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
         // Show soft keyboard automatically and request focus to field
         getDialog().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-        save.setOnClickListener(view1 -> dismiss());
+        save.setOnClickListener(v->Log.e(getClass().getCanonicalName(),"bonjour"));
 
     }
-
 }

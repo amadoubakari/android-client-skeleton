@@ -227,9 +227,9 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
         // le conteneur de fragments est associé au gestionnaire de fragments
         // ç-à-d que le fragment n° i du conteneur de fragments est le fragment n° i délivré par le gestionnaire de fragments
         mViewPager = (MyPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        //mViewPager.setAdapter(mSectionsPagerAdapter);
         // on inhibe le swipe entre fragments
-        mViewPager.setSwipeEnabled(false);
+        //mViewPager.setSwipeEnabled(false);
         // adjacence des fragments
         mViewPager.setOffscreenPageLimit(OFF_SCREEN_PAGE_LIMIT);
         // qu'on associe à notre gestionnaire de fragments
@@ -358,7 +358,7 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
 
         // constructeur
         public SectionsPagerAdapter(FragmentManager fm) {
-            super(fm);
+            super(fm, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
             // fragments de la classe fille
             fragments = getFragments();
         }

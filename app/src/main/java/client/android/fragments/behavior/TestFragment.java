@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +13,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.flys.notification.dialog.DialogStyle;
 import com.flys.notification.dialog.NotificationDetailsDialogFragment;
 import com.flys.tools.dialog.MaterialNotificationDialog;
 import com.flys.generictools.dao.daoException.DaoException;
@@ -38,6 +38,8 @@ import client.android.dao.db.User;
 import client.android.dao.db.UserDao;
 import client.android.dao.db.UserDaoImpl;
 
+import com.flys.notification.dialog.ConfigDialogFragment;
+
 @EFragment(R.layout.fragment_dummy_layout)
 @OptionsMenu(R.menu.menu_vide)
 public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer, NotificationAdapter.NotificationOnclickListener {
@@ -58,9 +60,9 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
     void splas() {
         Bundle bundle = new Bundle();
         bundle.putSerializable("notification", new Notification("title", "subtitle", "context", null, null));
-        NotificationDetailsDialogFragment configDialogFragment = NotificationDetailsDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null));
-        configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
-        configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
+        //NotificationDetailsDialogFragment configDialogFragment = NotificationDetailsDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null));
+        //configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
+        //configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
        /* dialog = new MaterialNotificationDialog(activity,
                 new NotificationData("Dubun Guiziga", "Vvoudriez-vous quittez l'application?", "OUI", "NO", activity.getDrawable(R.drawable.ic_people_outline_24px)), this);
         dialog.show(getActivity().getSupportFragmentManager(), "data_notif");*/
@@ -79,6 +81,9 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
         transaction.addToBackStack(null);
         transaction.commit();*/
         //Utils.startNotification(getActivity(), R.id.main_c, notifications);
+        //ConfigDialogFragment configDialogFragment = ConfigDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null),new DialogStyle(activity.getColor(R.color.blue_300)));
+        //configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
+        //configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
     }
 
     @Override
@@ -196,10 +201,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     @Override
     public void onClickListener(int position) {
-        NotificationDetailsDialogFragment configDialogFragment = NotificationDetailsDialogFragment.newInstance(notifications.get(position));
-        View view = configDialogFragment.getView();
-        ImageView imageView=view.findViewById(R.id.notificiation_dialog_skip);
-        imageView.setOnClickListener(v -> configDialogFragment.dismiss());
+        ConfigDialogFragment configDialogFragment = ConfigDialogFragment.newInstance(notifications.get(position),new DialogStyle(activity.getColor(R.color.blue_300)));
         configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
     }

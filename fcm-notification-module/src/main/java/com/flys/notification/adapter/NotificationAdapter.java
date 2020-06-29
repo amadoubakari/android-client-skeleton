@@ -8,9 +8,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.text.HtmlCompat;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.flys.notification.R;
@@ -49,13 +51,39 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.subTitle.setText(String.valueOf(notification.getSubTitle()));
         holder.content.setText(HtmlCompat.fromHtml(notification.getContent(), HtmlCompat.FROM_HTML_MODE_LEGACY));
         holder.date.setText(formatter.format(notification.getDate()));
+        holder.contentPreview.setText(notification.getSubTitle().concat(" ..."));
         if (notification.getImage() != null) {
             holder.image.setImageBitmap(BitmapFactory.decodeByteArray(notification.getImage(), 0, notification.getImage().length));
         }
-
+        holder.hideImage.setOnClickListener(v -> {
+            toggleSectionText(holder.hideImage, holder.lytExpandText, holder.nestedScrollView);
+        });
+        holder.lytExpandText.setVisibility(View.GONE);
     }
 
+    private void toggleSectionText(ImageView view, View lytExpandText,NestedScrollView nested_scroll_view) {
+        boolean show = toggleArrow(view);
+        if (show) {
+            ViewAnimation.expand(lytExpandText, new ViewAnimation.AnimListener() {
+                @Override
+                public void onFinish() {
+                    Tools.nestedScrollTo(nested_scroll_view, lytExpandText);
+                }
+            });
+        } else {
+            ViewAnimation.collapse(lytExpandText);
+        }
+    }
 
+    public boolean toggleArrow(View view) {
+        if (view.getRotation() == 0) {
+            view.animate().setDuration(200).rotation(180);
+            return true;
+        } else {
+            view.animate().setDuration(200).rotation(0);
+            return false;
+        }
+    }
     @Override
     public int getItemCount() {
         return notifications.size();
@@ -70,6 +98,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         Button button;
         ImageView image;
         TextView date;
+        ImageView hideImage;
+        View lytExpandText;
+        TextView contentPreview;
+        NestedScrollView nestedScrollView;
         NotificationOnclickListener notificationOnclickListener;
 
         public Holder(@NonNull View itemView, NotificationOnclickListener notificationOnclickListener) {
@@ -81,6 +113,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             button = itemView.findViewById(R.id.button);
             image = itemView.findViewById(R.id.image);
             date = itemView.findViewById(R.id.date);
+            hideImage = itemView.findViewById(R.id.bt_toggle_text);
+            lytExpandText = itemView.findViewById(R.id.lyt_expand_text);
+            nestedScrollView= itemView.findViewById(R.id.nested_scroll_view);
+            contentPreview= itemView.findViewById(R.id.subtitle_for_content);
             this.notificationOnclickListener = notificationOnclickListener;
             button.setOnClickListener(this);
             menu.setOnClickListener(this);
@@ -90,7 +126,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         public void onClick(View v) {
             if (v.getId() == R.id.menu) {
                 notificationOnclickListener.onMenuListener(v, getAdapterPosition());
-            }else if(v.getId()==R.id.button){
+            } else if (v.getId() == R.id.button) {
                 notificationOnclickListener.onClickListener(getAdapterPosition());
             }
         }

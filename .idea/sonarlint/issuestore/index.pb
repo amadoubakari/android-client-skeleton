@@ -83,3 +83,13 @@ ifcm-notification-module/src/main/java/com/flys/notification/dialog/Notification
 Lcommon-tools/src/main/java/com/flys/tools/dialog/AbstractDialogActivity.java,3\c\3c7e90812603de133271af26fa56f1ae8c051a3f
 j
 :common-tools/src/main/java/com/flys/tools/utils/Utils.java,b\f\bfab0e873aaa23bc30f88a858a2cd066c2a81a11
+Œ
+\fcm-notification-module/src/main/java/com/flys/notification/dialog/ConfigDialogFragment.java,e\a\ea2ec7f4c84fae26121e8c679a168827bae1d644
+o
+?app/src/main/java/client/android/architecture/core/MyPager.java,0\a\0ade73651c9d98035220d6fd99b2958a3e9bf05d
+†
+Vfcm-notification-module/src/main/java/com/flys/notification/adapter/ViewAnimation.java,c\3\c373858771c3fc2c64ee6f880d84144833345871
+~
+Nfcm-notification-module/src/main/java/com/flys/notification/adapter/Tools.java,7\f\7f74748e675ee1c831361a14629bac8bdfdc3888
+ƒ
+Sfcm-notification-module/src/main/java/com/flys/notification/dialog/DialogStyle.java,f\0\f081efde102832740532940fa1032f846e778ce4
