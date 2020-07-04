@@ -1,5 +1,7 @@
 package com.flys.notification.dialog;
 
+import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +17,7 @@ import androidx.fragment.app.DialogFragment;
 
 import com.flys.notification.R;
 import com.flys.notification.domain.Notification;
+import com.flys.notification.utils.Utils;
 
 import java.text.SimpleDateFormat;
 
@@ -32,9 +35,12 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
     private ImageView back;
     private TextView time;
     private TextView content;
+    private ImageView image;
     private static SimpleDateFormat formatter;
+    private static Context context;
 
-    public static NotificationDetailsDialogFragment newInstance(Notification notification, DialogStyle dialogStyle) {
+    public static NotificationDetailsDialogFragment newInstance(Context context1, Notification notification, DialogStyle dialogStyle) {
+        context = context1;
         formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
         NotificationDetailsDialogFragment frag = new NotificationDetailsDialogFragment();
         Bundle bundle = new Bundle();
@@ -73,6 +79,7 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
         save = view.findViewById(R.id.save);
         time = view.findViewById(R.id.time);
         content = view.findViewById(R.id.content);
+        image = view.findViewById(R.id.image);
         notificationDetailsHeader = view.findViewById(R.id.lyt_notification_details_header);
         // Fetch arguments from bundle and set title
         notification = (Notification) getArguments().getSerializable("notification");
@@ -89,6 +96,10 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
         save.setOnClickListener(view1 -> dismiss());
         back.setOnClickListener(view1 -> dismiss());
+        if (notification.getImageName() != null && !notification.getImageName().isEmpty()) {
+            image.setImageDrawable(Utils.loadImageFromStorage("glearning", notification.getImageName(), context));
+        }
+
 
     }
 

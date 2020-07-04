@@ -140,11 +140,13 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
                     "        <li>san</li>\n" +
                     "      </ol>      \n" +
                     "    </li>\n" +
-                    "  </ul>", null, new Date(), null));
+                    "  </ul>", null, new Date(), "amadou.jpg",null));
         }
         notificationAdapter = new NotificationAdapter(activity, notifications, this);
+        notificationAdapter.refreshAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(activity));
         recyclerView.setAdapter(notificationAdapter);
+
 
     }
 
@@ -200,7 +202,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     @Override
     public void onButtonClickListener(int position) {
-        NotificationDetailsDialogFragment notificationDetailsDialogFragment = NotificationDetailsDialogFragment.newInstance(notifications.get(position),new DialogStyle(activity.getColor(R.color.blue_300)));
+        NotificationDetailsDialogFragment notificationDetailsDialogFragment = NotificationDetailsDialogFragment.newInstance(activity, notifications.get(position),new DialogStyle(activity.getColor(R.color.blue_300)));
         notificationDetailsDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         notificationDetailsDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
     }

@@ -1,29 +1,29 @@
 
+W
+java:S1117 ";Rename "toolbar" which hides the field declared at line 49.(ô¢º›þÿÿÿÿ
+z
+java:S14508"dRemove the "mSectionsPagerAdapter" field and declare it as a local variable in the relevant methods.(ÆÖ¶†
+Y	java:S125æ"<This block of commented-out lines of code should be removed.(¤¥Àè8ÓÝÎÜ®.
 
 java:S1186×"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½Ä³ïþÿÿÿÿ
-Y	java:S125æ"<This block of commented-out lines of code should be removed.(¤¥Àè8ÓÝÎÜ®.
 q
 java:S1450B"VRemove the "profile" field and declare it as a local variable in the relevant methods.(Îë”Óüÿÿÿÿ
-^	java:S125è"<This block of commented-out lines of code should be removed.(¾×Íœÿÿÿÿÿ8¢ÐÜ®.
-˜
-java:S1186Ü"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ž¦›Í
->
-java:S1148j"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+f
+java:S1874è"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(³ßùŒþÿÿÿÿ
 >
 java:S1148q"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
 ?
 java:S1148…"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-z
-java:S14508"dRemove the "mSectionsPagerAdapter" field and declare it as a local variable in the relevant methods.(ÆÖ¶†
-W
-java:S1117 ";Rename "toolbar" which hides the field declared at line 49.(ô¢º›þÿÿÿÿ
-m
-java:S3776w"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ž¨Œþÿÿÿÿ
 p
 java:S1450>"[Remove the "drawerLayout" field and declare it as a local variable in the relevant methods.(Æë‰n
-F
-java:S1068B"+Remove this unused "profile" private field.(Îë”Óüÿÿÿÿ
 ?
 java:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-f
-java:S1874è"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(³ßùŒþÿÿÿÿ
+˜
+java:S1186Ü"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ž¦›Í
+^	java:S125è"<This block of commented-out lines of code should be removed.(¾×Íœÿÿÿÿÿ8¢ÐÜ®.
+m
+java:S3776w"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ž¨Œþÿÿÿÿ
+F
+java:S1068B"+Remove this unused "profile" private field.(Îë”Óüÿÿÿÿ
+>
+java:S1148j"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

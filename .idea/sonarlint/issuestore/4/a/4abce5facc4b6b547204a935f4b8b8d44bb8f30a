@@ -1,9 +1,23 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(šá’©8ËúËŒ®.
-S
-java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8¼ıÈ“®.
-^
-java:S1128"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8ÿ¿ú®.
 x
-java:S1450"[Remove the "notification" field and declare it as a local variable in the relevant methods.(ˆ—¿8Ùê¬.
-]	java:S125"<This block of commented-out lines of code should be removed.(èò¸Ôøÿÿÿÿ8¸‚®.
+java:S1450%"VRemove the "content" field and declare it as a local variable in the relevant methods.(¡é¦ıÿÿÿÿ8¬ØÆÁ±.
+]
+java:S1128";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8°¿¸Á±.
+p
+java:S1450$"SRemove the "time" field and declare it as a local variable in the relevant methods.(©öÛ8Ú¹êˆ°.
+u
+java:S1450"SRemove the "save" field and declare it as a local variable in the relevant methods.(€­™Šıÿÿÿÿ8Í×ˆ°.
+p
+java:S1450#"SRemove the "back" field and declare it as a local variable in the relevant methods.(Ä­ìé8§¼‘ˆ°.
+n
+java:S1450"XRemove the "mEditText" field and declare it as a local variable in the relevant methods.(İ­‰ï
+Š
+java:S1450!"hRemove the "notificationDetailsHeader" field and declare it as a local variable in the relevant methods.(Ç‡ğÇùÿÿÿÿ8Ôôü¯±.
+w
+java:S1450""ZRemove the "dialogStyle" field and declare it as a local variable in the relevant methods.(Í©™Ï8Éªã„¯.
+x
+java:S1450 "[Remove the "notification" field and declare it as a local variable in the relevant methods.(ˆ—¿8·ŞÉ»®.
+C
+java:S2885'"&Make "formatter" an instance variable.(á–É•8ÍŞïˆ°.
+q
+java:S1450&"TRemove the "image" field and declare it as a local variable in the relevant methods.(İÈ½8Ôôü¯±.

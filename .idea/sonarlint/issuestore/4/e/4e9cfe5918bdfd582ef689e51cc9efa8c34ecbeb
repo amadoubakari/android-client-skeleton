@@ -1,8 +1,6 @@
 
-E
-java:S1604B"(Make this anonymous inner class a lambda(¸‡ˆ8º¶€â®.
-r	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±•Öéÿÿÿÿÿ8ª·ïá®.
-S
-java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8Ä¡á®.
 I
-java:S16029",Remove useless curly braces around statement(‚·ˆÂ8«ø£á®.
+java:S1602B",Remove useless curly braces around statement(‚·ˆÂ8«ø£á®.
+r	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±•Öéÿÿÿÿÿ8ª·ïá®.
+]
+java:S1128";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8é™Ä±.

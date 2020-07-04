@@ -23,6 +23,8 @@ public class Notification implements Serializable {
     private String imageUrl;
     @DatabaseField (dataType=DataType.DATE_STRING,canBeNull = false)
     private Date date;
+    @DatabaseField
+    private String imageName;
 
     private byte[] image;
 
@@ -56,6 +58,16 @@ public class Notification implements Serializable {
         this.content = content;
         this.imageUrl = imageUrl;
         this.date = date;
+        this.image = image;
+    }
+
+    public Notification(String title, String subTitle, String content, String imageUrl, Date date, String imageName, byte[] image) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.content = content;
+        this.imageUrl = imageUrl;
+        this.date = date;
+        this.imageName = imageName;
         this.image = image;
     }
 
@@ -115,14 +127,24 @@ public class Notification implements Serializable {
         this.date = date;
     }
 
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
     @Override
     public String toString() {
         return "Notification{" +
-                "title='" + title + '\'' +
+                "id=" + id +
+                ", title='" + title + '\'' +
                 ", subTitle='" + subTitle + '\'' +
                 ", content='" + content + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
                 ", date=" + date +
+                ", imageName='" + imageName + '\'' +
                 ", image=" + Arrays.toString(image) +
                 '}';
     }

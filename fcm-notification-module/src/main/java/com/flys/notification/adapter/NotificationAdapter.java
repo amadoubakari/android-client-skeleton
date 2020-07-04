@@ -2,6 +2,7 @@ package com.flys.notification.adapter;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.flys.notification.R;
 import com.flys.notification.domain.Notification;
+import com.flys.notification.utils.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -46,21 +48,28 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
         Notification notification = notifications.get(position);
+        BitmapDrawable data;
+        if (Utils.fileExist("glearning", notification.getImageName(), context)) {
+            holder.image.setVisibility(View.VISIBLE);
+            data = Utils.loadImageFromStorage("glearning", notification.getImageName(), context);
+            holder.image.setImageDrawable(data);
+            holder.icon.setImageDrawable(data);
+        } else {
+            holder.image.setVisibility(View.GONE);
+            holder.icon.setVisibility(View.GONE);
+        }
         holder.title.setText(notification.getTitle());
         holder.subTitle.setText(String.valueOf(notification.getSubTitle()));
         holder.content.setText(HtmlCompat.fromHtml(notification.getContent(), HtmlCompat.FROM_HTML_MODE_LEGACY));
         holder.date.setText(formatter.format(notification.getDate()));
         holder.contentPreview.setText(notification.getSubTitle().concat(" ..."));
-        if (notification.getImage() != null) {
-            holder.image.setImageBitmap(BitmapFactory.decodeByteArray(notification.getImage(), 0, notification.getImage().length));
-        }
         holder.hideImage.setOnClickListener(v -> {
             toggleSectionText(holder.hideImage, holder.lytExpandText, holder.nestedScrollView);
         });
         holder.lytExpandText.setVisibility(View.GONE);
     }
 
-    private void toggleSectionText(ImageView view, View lytExpandText,NestedScrollView nested_scroll_view) {
+    private void toggleSectionText(ImageView view, View lytExpandText, NestedScrollView nested_scroll_view) {
         boolean show = toggleArrow(view);
         if (show) {
             ViewAnimation.expand(lytExpandText, () -> Tools.nestedScrollTo(nested_scroll_view, lytExpandText));
@@ -78,6 +87,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             return false;
         }
     }
+
     @Override
     public int getItemCount() {
         return notifications.size();
@@ -91,6 +101,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         ImageView menu;
         Button button;
         ImageView image;
+        ImageView icon;
         TextView date;
         ImageView hideImage;
         View lytExpandText;
@@ -106,11 +117,12 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             menu = itemView.findViewById(R.id.menu);
             button = itemView.findViewById(R.id.button);
             image = itemView.findViewById(R.id.image);
+            icon = itemView.findViewById(R.id.icon);
             date = itemView.findViewById(R.id.date);
             hideImage = itemView.findViewById(R.id.bt_toggle_text);
             lytExpandText = itemView.findViewById(R.id.lyt_expand_text);
-            nestedScrollView= itemView.findViewById(R.id.nested_scroll_view);
-            contentPreview= itemView.findViewById(R.id.subtitle_for_content);
+            nestedScrollView = itemView.findViewById(R.id.nested_scroll_view);
+            contentPreview = itemView.findViewById(R.id.subtitle_for_content);
             this.notificationOnclickListener = notificationOnclickListener;
             button.setOnClickListener(this);
             menu.setOnClickListener(this);
@@ -138,6 +150,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public void setFilter(List<Notification> listModelsTasks) {
         notifications = new ArrayList<>();
         notifications.addAll(listModelsTasks);
+        notifyDataSetChanged();
+    }
+
+    public void refreshAdapter() {
         notifyDataSetChanged();
     }
 }
