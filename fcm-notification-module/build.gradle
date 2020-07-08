@@ -43,5 +43,5 @@ dependencies {
     api 'com.google.firebase:firebase-storage:19.1.1'
     // FirebaseUI Storage only
     api 'com.firebaseui:firebase-ui-storage:6.2.0'
-    api 'com.mikhaellopez:circularimageview:3.2.0'          // circle image view
+    api group: 'de.hdodenhof', name: 'circleimageview', version: '3.1.0'
 }

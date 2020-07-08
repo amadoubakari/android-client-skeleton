@@ -1,14 +1,13 @@
 package com.flys.notification.dialog;
 
 import android.content.Context;
-import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -21,23 +20,26 @@ import com.flys.notification.utils.Utils;
 
 import java.text.SimpleDateFormat;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by User on 19/10/2018.
  */
 
 public class NotificationDetailsDialogFragment extends DialogFragment {
 
-    private TextView mEditText;
-    private ImageView save;
-    private Notification notification;
-    private LinearLayout notificationDetailsHeader;
-    private DialogStyle dialogStyle;
     private ImageView back;
-    private TextView time;
+    private Notification notification;
+    private DialogStyle dialogStyle;
+    private TextView date;
+    private TextView title;
+    private TextView subTitle;
     private TextView content;
     private ImageView image;
     private static SimpleDateFormat formatter;
     private static Context context;
+    private BitmapDrawable data;
+    private CircleImageView icon;
 
     public static NotificationDetailsDialogFragment newInstance(Context context1, Notification notification, DialogStyle dialogStyle) {
         context = context1;
@@ -54,7 +56,7 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.notification_dialog_fragment_layout, container);
+        return inflater.inflate(R.layout.dialog_notification_details_fragment, container);
     }
 
     @Override
@@ -74,30 +76,31 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         // Get field from view
-        mEditText = view.findViewById(R.id.title);
-        back = view.findViewById(R.id.iv_notification_back);
-        save = view.findViewById(R.id.save);
-        time = view.findViewById(R.id.time);
+        back = view.findViewById(R.id.quit);
+        date = view.findViewById(R.id.date);
+        title = view.findViewById(R.id.title);
+        subTitle = view.findViewById(R.id.subtitle);
         content = view.findViewById(R.id.content);
         image = view.findViewById(R.id.image);
-        notificationDetailsHeader = view.findViewById(R.id.lyt_notification_details_header);
+        icon = view.findViewById(R.id.icon);
         // Fetch arguments from bundle and set title
         notification = (Notification) getArguments().getSerializable("notification");
         dialogStyle = (DialogStyle) getArguments().getSerializable("dialogStyle");
-        mEditText.setText(notification.getTitle());
-        time.setText(formatter.format(notification.getDate()));
-        time.setTextColor(dialogStyle.getHeaderColor());
+        data = Utils.loadImageFromStorage("glearning", notification.getImageName(), context);
+        date.setText(formatter.format(notification.getDate()));
+        date.setTextColor(dialogStyle.getHeaderColor());
+        title.setText(notification.getTitle());
+        subTitle.setText(notification.getSubTitle());
+        subTitle.setTextColor(dialogStyle.getHeaderColor());
         content.setText(HtmlCompat.fromHtml(notification.getContent(), HtmlCompat.FROM_HTML_MODE_LEGACY));
-        notificationDetailsHeader.setBackgroundColor(dialogStyle.getHeaderColor());
         getDialog().setTitle(notification.getTitle());
         // Show soft keyboard automatically and request focus to field
-        mEditText.requestFocus();
         getDialog().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-        save.setOnClickListener(view1 -> dismiss());
         back.setOnClickListener(view1 -> dismiss());
         if (notification.getImageName() != null && !notification.getImageName().isEmpty()) {
-            image.setImageDrawable(Utils.loadImageFromStorage("glearning", notification.getImageName(), context));
+            image.setBackground(data);
+            icon.setImageDrawable(data);
         }
 
 

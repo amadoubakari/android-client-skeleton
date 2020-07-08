@@ -51,6 +51,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         BitmapDrawable data;
         if (Utils.fileExist("glearning", notification.getImageName(), context)) {
             holder.image.setVisibility(View.VISIBLE);
+            holder.icon.setVisibility(View.VISIBLE);
             data = Utils.loadImageFromStorage("glearning", notification.getImageName(), context);
             holder.image.setImageDrawable(data);
             holder.icon.setImageDrawable(data);
@@ -68,6 +69,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         });
         holder.lytExpandText.setVisibility(View.GONE);
     }
+
+
 
     private void toggleSectionText(ImageView view, View lytExpandText, NestedScrollView nested_scroll_view) {
         boolean show = toggleArrow(view);
@@ -109,7 +112,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         NestedScrollView nestedScrollView;
         NotificationOnclickListener notificationOnclickListener;
 
-        public Holder(@NonNull View itemView, NotificationOnclickListener notificationOnclickListener) {
+        public Holder(@NonNull View itemView, NotificationOnclickListener onclickListener) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
             subTitle = itemView.findViewById(R.id.subtitle);
@@ -123,7 +126,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             lytExpandText = itemView.findViewById(R.id.lyt_expand_text);
             nestedScrollView = itemView.findViewById(R.id.nested_scroll_view);
             contentPreview = itemView.findViewById(R.id.subtitle_for_content);
-            this.notificationOnclickListener = notificationOnclickListener;
+            notificationOnclickListener = onclickListener;
             button.setOnClickListener(this);
             menu.setOnClickListener(this);
         }
