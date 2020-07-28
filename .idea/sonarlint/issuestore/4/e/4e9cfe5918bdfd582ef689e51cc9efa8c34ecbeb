@@ -1,0 +1,6 @@
+
+]
+java:S1128";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8Ø‡êÅ±.
+I
+java:S1602C",Remove useless curly braces around statement(‚·ˆÂ8Ø‡êÅ±.
+r	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±•Öéÿÿÿÿÿ8Ø‡êÅ±.

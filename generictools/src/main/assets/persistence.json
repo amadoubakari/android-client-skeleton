@@ -1,0 +1,14 @@
+{
+  "entities":[
+    "com.flys.bible.entities.Chapitre",
+    "com.flys.bible.entities.Titre",
+    "com.flys.bible.entities.AppConfig",
+    "com.flys.bible.entities.Verset",
+    "com.flys.bible.entities.Testament",
+    "com.flys.bible.entities.Livre",
+    "com.flys.bible.entities.DailyVerset",
+    "com.flys.bible.entities.DailyVersetContent",
+    "com.flys.bible.entities.DailyVersetImage"
+  ]
+
+}

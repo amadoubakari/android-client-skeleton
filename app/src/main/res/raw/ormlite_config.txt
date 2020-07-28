@@ -1,0 +1,17 @@
+#
+# generated on 2020/06/18 09:47:16
+#
+# --table-start--
+dataClass=client.android.dao.db.User
+tableName=user
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nom
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

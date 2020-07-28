@@ -1,0 +1,7 @@
+{
+  "databaseName": "squeleton.db",
+  "databaseVersion": 1,
+  "entities": [
+    "client.android.dao.db.User"
+  ]
+}
