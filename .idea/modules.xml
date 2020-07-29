@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-client-skeleton.iml" filepath="$PROJECT_DIR$/android-client-skeleton.iml" group="android-client-skeleton" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android-client-skeleton-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android-client-skeleton-app.iml" group="android-client-skeleton/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="android-client-skeleton/app" />
       <module fileurl="file://$PROJECT_DIR$/common-tools/common-tools.iml" filepath="$PROJECT_DIR$/common-tools/common-tools.iml" group="android-client-skeleton/common-tools" />
       <module fileurl="file://$PROJECT_DIR$/fcm-notification-module/fcm-notification-module.iml" filepath="$PROJECT_DIR$/fcm-notification-module/fcm-notification-module.iml" group="android-client-skeleton/fcm-notification-module" />
