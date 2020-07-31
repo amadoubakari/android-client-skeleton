@@ -1,23 +1,27 @@
 
-t
-java:S1450$"WRemove the "subTitle" field and declare it as a local variable in the relevant methods.(ãÃÃ‚8ÍÎİÒ±.
-C
-java:S2885'"&Make "formatter" an instance variable.(á–É•8•ÑòÒ±.
-p
-java:S1450)"SRemove the "data" field and declare it as a local variable in the relevant methods.(íç‰„8ÎæÀÔ±.
-p
-java:S1450#"TRemove the "title" field and declare it as a local variable in the relevant methods.(ı«¶h8“ùÜÒ±.
-x
-java:S1450%"VRemove the "content" field and declare it as a local variable in the relevant methods.(¡é¦ıÿÿÿÿ8ãöéÅ±.
-p
-java:S1450"SRemove the "back" field and declare it as a local variable in the relevant methods.(Ä­ìé8•ÑòÒ±.
-w
-java:S1450!"ZRemove the "dialogStyle" field and declare it as a local variable in the relevant methods.(Í©™Ï8ãöéÅ±.
 q
-java:S1450&"TRemove the "image" field and declare it as a local variable in the relevant methods.(İÈ½8•ÑòÒ±.
-x
-java:S1450 "[Remove the "notification" field and declare it as a local variable in the relevant methods.(ˆ—¿8¶ŠÀÔ±.
-u
-java:S1450""SRemove the "date" field and declare it as a local variable in the relevant methods.(›ÕÆ«øÿÿÿÿ8”à­Ò±.
+java:S1450 "[Remove the "notification" field and declare it as a local variable in the relevant methods.(ˆ—¿
+<
+java:S2885'"&Make "formatter" an instance variable.(á–É•
+n
+java:S1450""SRemove the "date" field and declare it as a local variable in the relevant methods.(›ÕÆ«øÿÿÿÿ
+j
+java:S1450&"TRemove the "image" field and declare it as a local variable in the relevant methods.(İÈ½
+i
+java:S1450"SRemove the "back" field and declare it as a local variable in the relevant methods.(Ä­ìé
 p
-java:S1450*"SRemove the "icon" field and declare it as a local variable in the relevant methods.(É¼»Ö8°×óÒ±.
+java:S1450!"ZRemove the "dialogStyle" field and declare it as a local variable in the relevant methods.(Í©™Ï
+m
+java:S1450$"WRemove the "subTitle" field and declare it as a local variable in the relevant methods.(ãÃÃ‚
+q
+java:S1450%"VRemove the "content" field and declare it as a local variable in the relevant methods.(¡é¦ıÿÿÿÿ
+i
+java:S1450#"TRemove the "title" field and declare it as a local variable in the relevant methods.(ı«¶h
+k
+java:S3252D"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(Û»äÎùÿÿÿÿ
+i
+java:S1450*"SRemove the "icon" field and declare it as a local variable in the relevant methods.(É¼»Ö
+k
+java:S3252C"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(—ïˆíûÿÿÿÿ
+i
+java:S1450)"SRemove the "data" field and declare it as a local variable in the relevant methods.(íç‰„

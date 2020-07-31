@@ -142,7 +142,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
                     "    </li>\n" +
                     "  </ul>", null, new Date(), "amadou.jpg",null));
         }
-        notificationAdapter = new NotificationAdapter(activity, notifications, this);
+        notificationAdapter = new NotificationAdapter(activity, notifications, new DialogStyle(activity.getColor(R.color.blue_500),1,"fonts/Roboto-Thin.ttf"),this);
         notificationAdapter.refreshAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(activity));
         recyclerView.setAdapter(notificationAdapter);

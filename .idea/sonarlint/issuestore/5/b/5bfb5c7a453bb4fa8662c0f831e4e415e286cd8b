@@ -1,10 +1,0 @@
-
-L
-java:S3740"/Provide the parametrized type for this generic.(Úèøı8ÅØ™Ì¨.
-M
-java:S1128
-"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8½ ‹£ª.
-E
-java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅØ™Ì¨.
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8½ ‹£ª.
