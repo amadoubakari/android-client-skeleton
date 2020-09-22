@@ -19,7 +19,7 @@ android {
 
     defaultConfig {
         minSdkVersion 24
-        applicationId "com.flys.bible"
+        applicationId "client.android"
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"

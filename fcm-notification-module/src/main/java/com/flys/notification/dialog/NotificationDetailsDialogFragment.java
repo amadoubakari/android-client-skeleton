@@ -1,6 +1,7 @@
 package com.flys.notification.dialog;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -40,10 +41,12 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
     private static Context context;
     private BitmapDrawable data;
     private CircleImageView icon;
+    private static Typeface typeface;
 
     public static NotificationDetailsDialogFragment newInstance(Context context1, Notification notification, DialogStyle dialogStyle) {
         context = context1;
         formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+        typeface = Typeface.createFromAsset(context.getAssets(), dialogStyle.getFontPathFile());
         NotificationDetailsDialogFragment frag = new NotificationDetailsDialogFragment();
         Bundle bundle = new Bundle();
         bundle.putSerializable("notification", notification);
@@ -93,6 +96,7 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
         subTitle.setText(notification.getSubTitle());
         subTitle.setTextColor(dialogStyle.getHeaderColor());
         content.setText(HtmlCompat.fromHtml(notification.getContent(), HtmlCompat.FROM_HTML_MODE_LEGACY));
+        content.setTypeface(typeface);
         getDialog().setTitle(notification.getTitle());
         // Show soft keyboard automatically and request focus to field
         getDialog().getWindow().setSoftInputMode(
