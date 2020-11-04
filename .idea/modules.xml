@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-client-skeleton.iml" filepath="$PROJECT_DIR$/.idea/modules/android-client-skeleton.iml" group="android-client-skeleton" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="android-client-skeleton/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-tools/common-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/common-tools/common-tools.iml" group="android-client-skeleton/common-tools" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fcm-notification-module/fcm-notification-module.iml" filepath="$PROJECT_DIR$/.idea/modules/fcm-notification-module/fcm-notification-module.iml" group="android-client-skeleton/fcm-notification-module" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generictools/generictools.iml" filepath="$PROJECT_DIR$/.idea/modules/generictools/generictools.iml" group="android-client-skeleton/generictools" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-client-skeleton.iml" filepath="$PROJECT_DIR$/.idea/modules/android-client-skeleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android-client-skeleton.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android-client-skeleton.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-tools/android-client-skeleton.common-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/common-tools/android-client-skeleton.common-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fcm-notification-module/android-client-skeleton.fcm-notification-module.iml" filepath="$PROJECT_DIR$/.idea/modules/fcm-notification-module/android-client-skeleton.fcm-notification-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generictools/android-client-skeleton.generictools.iml" filepath="$PROJECT_DIR$/.idea/modules/generictools/android-client-skeleton.generictools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-authentication/android-client-skeleton.user-authentication.iml" filepath="$PROJECT_DIR$/.idea/modules/user-authentication/android-client-skeleton.user-authentication.iml" />
     </modules>
   </component>
 </project>

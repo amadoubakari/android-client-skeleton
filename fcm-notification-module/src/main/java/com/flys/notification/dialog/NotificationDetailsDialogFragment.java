@@ -26,7 +26,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /**
  * Created by User on 19/10/2018.
  */
-
 public class NotificationDetailsDialogFragment extends DialogFragment {
 
     private ImageView back;

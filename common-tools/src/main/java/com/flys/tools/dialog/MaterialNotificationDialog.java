@@ -41,9 +41,6 @@ public class MaterialNotificationDialog extends DialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(this.context, notificationData.getResourcesThemes());
-        //Custom view
-        //dialogBuilder.setView(R.layout.notification_dialog_fragment);
-        //Mise en forme de l'entete et de l'icone de l'application
         dialogBuilder.setIcon(notificationData.getIcon());
         dialogBuilder.setTitle(notificationData.getTitle());
         dialogBuilder.setMessage(notificationData.getBody());

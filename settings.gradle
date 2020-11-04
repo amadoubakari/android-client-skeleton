@@ -1,2 +1,3 @@
+include ':user-authentication'
 include ':app', ':common-tools', ':generictools'
 include ':fcm-notification-module'
