@@ -30,7 +30,7 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
     //private Dao<T, K> simpleDao = null;
     //private RuntimeExceptionDao<T, K> simpleRuntimeDao = null;
 
-    List<Class<?>> classList;
+    private List<Class<?>> classList;
 
     public DatabaseHelper(Context context, int ormlite_config) {
         super(context, Utils.getPersistanceData(context).getDatabaseName(), null, Utils.getPersistanceData(context).getDatabaseVersion(), ormlite_config);
@@ -45,7 +45,7 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
     public void onCreate(SQLiteDatabase db, ConnectionSource connectionSource) {
         try {
             Log.i(DatabaseHelper.class.getName(), "onCreate");
-            for (Class<?> entityClass : classList
+            for (Class<?> entityClass : this.classList
             ) {
                 TableUtils.createTableIfNotExists(connectionSource, entityClass);
             }
@@ -64,7 +64,7 @@ public class DatabaseHelper<T, K> extends OrmLiteSqliteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, ConnectionSource connectionSource, int oldVersion, int newVersion) {
         try {
             Log.i(DatabaseHelper.class.getName(), "onUpgrade");
-            for (Class<?> entityClass : classList
+            for (Class<?> entityClass : this.classList
             ) {
                 TableUtils.dropTable(connectionSource, entityClass, true);
             }

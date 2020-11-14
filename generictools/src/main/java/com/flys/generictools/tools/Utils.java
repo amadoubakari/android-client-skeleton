@@ -4,12 +4,10 @@ import android.content.Context;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flys.generictools.dao.db.DBPersistence;
-import com.flys.generictools.dao.db.Entities;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
-import java.util.List;
 
 public class Utils implements Serializable {
 

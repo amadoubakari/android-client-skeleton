@@ -41,23 +41,11 @@ public class MaterialNotificationDialog extends DialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(this.context, notificationData.getResourcesThemes());
-        //Custom view
-        //dialogBuilder.setView(R.layout.notification_dialog_fragment);
-        //Mise en forme de l'entete et de l'icone de l'application
         dialogBuilder.setIcon(notificationData.getIcon());
         dialogBuilder.setTitle(notificationData.getTitle());
         dialogBuilder.setMessage(notificationData.getBody());
-        dialogBuilder.setPositiveButton(notificationData.getOkMsg(), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int id) {
-                buttonOnclickListeneer.okButtonAction(dialog,id);
-            }
-        });
-        dialogBuilder.setNegativeButton(notificationData.getNoMsg(), new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                buttonOnclickListeneer.noButtonAction(dialog,id);
-            }
-        });
+        dialogBuilder.setPositiveButton(notificationData.getOkMsg(), (dialog, id) -> buttonOnclickListeneer.okButtonAction(dialog,id));
+        dialogBuilder.setNegativeButton(notificationData.getNoMsg(), (dialog, id) -> buttonOnclickListeneer.noButtonAction(dialog,id));
 
         return dialogBuilder.create();
     }

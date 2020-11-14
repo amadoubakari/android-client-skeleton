@@ -11,7 +11,7 @@
         android:layout_height="100dp"
         android:height="5dp"
         android:gravity="top"
-        android:hint="Un mot pour accompagner votre partage?"
+        android:hint="@string/dialog_fragment_layout_recommend_msg"
         android:inputType="textMultiLine"
         android:lines="50"
         android:maxLines="100"

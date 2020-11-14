@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abstract_dialog_activity_button_cancel">Annuler</string>
+    <string name="abstract_dialog_activity_button_send">Envoyer</string>
+    <string name="dialog_fragment_layout_recommend_msg">Un mot pour accompagner votre partage?</string>
+</resources>

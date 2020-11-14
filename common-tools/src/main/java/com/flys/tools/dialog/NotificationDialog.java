@@ -53,18 +53,10 @@ public class NotificationDialog extends DialogFragment {
         alertDialogBuilder.setTitle(notificationData.getTitle());
         alertDialogBuilder.setMessage(notificationData.getBody());
         alertDialogBuilder.setIcon(notificationData.getIcon());
-        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                getActivity().finish();
-            }
-        });
-        alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (dialog != null) {
-                    dialog.dismiss();
-                }
+        alertDialogBuilder.setPositiveButton("OK", (dialog, which) -> getActivity().finish());
+        alertDialogBuilder.setNegativeButton("No", (dialog, which) -> {
+            if (dialog != null) {
+                dialog.dismiss();
             }
         });
         return alertDialogBuilder.create();

@@ -1,7 +1,6 @@
 package com.flys.tools.dialog;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,17 +64,8 @@ public class AbstractDialogActivity extends DialogFragment {
         // Pass null as the parent view because its going in the dialog layout
         builder.setView(view)
                 // Add action buttons
-                .setPositiveButton("ENVOYER", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        sendBackResult(data.getText().toString());
-                    }
-                })
-                .setNegativeButton("ANNULER", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        AbstractDialogActivity.this.getDialog().cancel();
-                    }
-                });
+                .setPositiveButton(getResources().getString(R.string.abstract_dialog_activity_button_send), (dialog, id) -> sendBackResult(data.getText().toString()))
+                .setNegativeButton(getResources().getString(R.string.abstract_dialog_activity_button_cancel), (dialog, id) -> AbstractDialogActivity.this.getDialog().cancel());
         return builder.create();
     }
 
