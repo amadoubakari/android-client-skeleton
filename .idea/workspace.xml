@@ -10,37 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189485e5-5b2e-45ba-bfd1-08017de11ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/values-fr/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/src/androidTest/java/com/flys/auth/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-authentication/src/test/java/com/flys/auth/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/CommonToolsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/FacebookProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/FacebookUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/src/androidTest/java/com/kyossi/firebase/tools/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-tools/src/test/java/com/kyossi/firebase/tools/ExampleUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxandroid_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxandroid_1_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_1_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_android_spring_android_core_2_0_0_M3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_android_spring_android_rest_template_2_0_0_M3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/AbstractDialogActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/AbstractDialogActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/MaterialNotificationDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/MaterialNotificationDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/NotificationDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/NotificationDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generictools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/generictools/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,11 +72,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sunflower" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/floatingsearchview-master/floatingsearchview-master/sample" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.flys.tools.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\java\com\flys\tools\utils" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -104,7 +103,7 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="-Xlint:deprecation" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
@@ -150,6 +149,7 @@
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -172,6 +172,14 @@
     </state>
     <state x="2157" y="110" key="#PSD/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602407429393" />
     <state x="158" y="72" key="#PSD/0.0.1280.680@0.0.1280.680" timestamp="1600799763973" />
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604600637858">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604600637858" />
+    <state x="2685" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1604740446557">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604740446557" />
     <state x="221" y="95" key="AndroidCreateResourceDirectoryDialog" timestamp="1601456777269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -185,15 +193,16 @@
     </state>
     <state x="-1171" y="234" key="AndroidCreateXmlResourceDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601459961942" />
     <state x="499" y="153" key="AndroidCreateXmlResourceDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1601459331060" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1600839143947">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1604935244409">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1600839143947" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1604336929517">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604935244409" />
+    <state x="2133" y="0" key="SettingsEditor" timestamp="1604596359309">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1601455887760" />
-    <state x="2133" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602407278834" />
+    <state x="2133" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604596359309" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604336929517" />
     <state x="343" y="54" key="com.intellij.ide.util.TipDialog" timestamp="1601527313192">
       <screen x="0" y="0" width="1280" height="680" />

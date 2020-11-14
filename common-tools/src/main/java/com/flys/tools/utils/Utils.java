@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.Network;
 import android.net.Uri;
 import android.os.Environment;
 import android.text.Spannable;
@@ -26,6 +28,8 @@ import java.io.Reader;
 import java.io.Serializable;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.Optional;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Utils implements Serializable {
 
@@ -169,4 +173,63 @@ public class Utils implements Serializable {
 
                 });
     }
+
+    /**
+     * check connection
+     *
+     * @param context
+     */
+    public static void registerNetworkCallback(Context context) {
+        try {
+            ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+            connectivityManager
+                    .registerDefaultNetworkCallback(new ConnectivityManager.NetworkCallback() {
+                                                        @Override
+                                                        public void onAvailable(Network network) {
+                                                            CommonToolsConstants.isNetworkConnected = true; // Global Static Variable
+                                                        }
+
+                                                        @Override
+                                                        public void onLost(Network network) {
+                                                            CommonToolsConstants.isNetworkConnected = false; // Global Static Variable
+                                                        }
+
+                                                        @Override
+                                                        public void onUnavailable() {
+                                                            CommonToolsConstants.isNetworkConnected = false; // Global Static Variable
+                                                        }
+                                                    }
+
+                    );
+            CommonToolsConstants.isNetworkConnected = false;
+        } catch (Exception e) {
+            CommonToolsConstants.isNetworkConnected = false;
+        }
+    }
+
+    /**
+     * @param url
+     * @return
+     */
+    public static FacebookUrl buildFacebookProfileImageUrlFromParameters(String url) {
+        Optional<Uri> uriOptional = Optional.ofNullable(Uri.parse(url));
+        AtomicReference<FacebookUrl> facebookUrl = new AtomicReference<>();
+        uriOptional.ifPresent(uri -> {
+            FacebookUrl facebookUrlLocal = new FacebookUrl(null, uri.getQueryParameter("hash"), uri.getQueryParameter("ext"), uri.getQueryParameter("asid"));
+            facebookUrl.set(facebookUrlLocal);
+        });
+        return facebookUrl.get();
+    }
+
+    /**
+     *
+     * @param url
+     * @return
+     */
+    public static FacebookUrl facebookProfileImageUrlSplit(String url) {
+        FacebookUrl facebookUrl = buildFacebookProfileImageUrlFromParameters(url);
+        facebookUrl.setBaseUrl(url.split("\\?")[0]);
+        return facebookUrl;
+    }
+
 }

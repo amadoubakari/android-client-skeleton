@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android-client-skeleton.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android-client-skeleton.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-tools/android-client-skeleton.common-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/common-tools/android-client-skeleton.common-tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fcm-notification-module/android-client-skeleton.fcm-notification-module.iml" filepath="$PROJECT_DIR$/.idea/modules/fcm-notification-module/android-client-skeleton.fcm-notification-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/firebase-tools/android-client-skeleton.firebase-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/firebase-tools/android-client-skeleton.firebase-tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/generictools/android-client-skeleton.generictools.iml" filepath="$PROJECT_DIR$/.idea/modules/generictools/android-client-skeleton.generictools.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-authentication/android-client-skeleton.user-authentication.iml" filepath="$PROJECT_DIR$/.idea/modules/user-authentication/android-client-skeleton.user-authentication.iml" />
     </modules>
