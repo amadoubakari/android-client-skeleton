@@ -3,6 +3,7 @@ package client.android.fragments.behavior;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +39,7 @@ import client.android.dao.db.UserDao;
 import client.android.dao.db.UserDaoImpl;
 
 import com.flys.notification.dialog.NotificationDetailsDialogFragment;
+import com.kyossi.firebase.tools.FirebaseCommonTools;
 
 @EFragment(R.layout.fragment_dummy_layout)
 @OptionsMenu(R.menu.menu_vide)
@@ -57,8 +59,8 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     @Click(R.id.Splashscreen)
     void splas() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable("notification", new Notification("title", "subtitle", "context", null, null));
+        //Bundle bundle = new Bundle();
+        //bundle.putSerializable("notification", new Notification("title", "subtitle", "context", null, null));
         //NotificationDetailsDialogFragment configDialogFragment = NotificationDetailsDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null));
         //configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         //configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
@@ -83,6 +85,8 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
         //ConfigDialogFragment configDialogFragment = ConfigDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null),new DialogStyle(activity.getColor(R.color.blue_300)));
         //configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         //configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
+        Log.e(getClass().getSimpleName(), "splashscreen");
+        FirebaseCommonTools.rateApplication(activity,true);
     }
 
     @Override

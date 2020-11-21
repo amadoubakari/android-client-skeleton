@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_rating_msg">Noter l\'application </string>
+    <string name="main_activity_completed_download">Vos mis à jour sont prêts à installer.</string>
+    <string name="main_activity_download_completed_restart">Redémarrer</string>
+</resources>
