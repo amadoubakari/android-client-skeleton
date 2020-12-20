@@ -17,6 +17,8 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
+import androidx.core.content.res.ResourcesCompat;
+
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.BufferedReader;
@@ -59,6 +61,30 @@ public class Utils implements Serializable {
     }
 
     /**
+     *
+     * @param context
+     * @param menu
+     * @param fontPath
+     */
+    public static void applyFontStyleToMenu(Context context, Menu menu, int fontPath) {
+        for (int i = 0; i < menu.size(); i++) {
+            MenuItem menuItem = menu.getItem(i);
+
+            //for aapplying a font to subMenu ...
+            SubMenu subMenu = menuItem.getSubMenu();
+            if (subMenu != null && subMenu.size() > 0) {
+                for (int j = 0; j < subMenu.size(); j++) {
+                    MenuItem subMenuItem = subMenu.getItem(j);
+                    applyFontToMenuItem(context, subMenuItem, fontPath);
+                }
+            }
+
+            //the method we have create in activity
+            applyFontToMenuItem(context, menuItem, fontPath);
+        }
+    }
+
+    /**
      * @param context
      * @param mi
      * @param fontPath
@@ -70,6 +96,18 @@ public class Utils implements Serializable {
         mi.setTitle(mNewTitle);
     }
 
+    /**
+     *
+     * @param context
+     * @param mi
+     * @param fontPath
+     */
+    private static void applyFontToMenuItem(Context context, MenuItem mi, int fontPath) {
+        Typeface font = ResourcesCompat.getFont(context,fontPath);
+        SpannableString mNewTitle = new SpannableString(mi.getTitle());
+        mNewTitle.setSpan(new CustomTypefaceSpan("", font), 0, mNewTitle.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        mi.setTitle(mNewTitle);
+    }
 
     //Elle permet de partager un texte avec d'autres applications(facebook, whatsapp, twitter, skype, etc. ), ce texte peut être une URL
 

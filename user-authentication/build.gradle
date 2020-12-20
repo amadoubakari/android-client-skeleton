@@ -15,6 +15,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+        project.archivesBaseName = 'user-authentication'
+        project.version = android.defaultConfig.versionName
     }
 
     buildTypes {
@@ -26,6 +28,16 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    publishNonDefault true
+    libraryVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.aar')) {
+                def fileName = "${archivesBaseName}.aar"
+                outputFileName = fileName
+            }
+        }
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -41,5 +53,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation 'com.google.android.play:core:1.8.3'
+    implementation 'com.google.android.play:core:1.9.0'
 }

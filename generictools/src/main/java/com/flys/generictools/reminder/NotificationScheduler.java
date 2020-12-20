@@ -96,7 +96,7 @@ public class NotificationScheduler {
                 //.setSound(alarmSound)
                 .setVibrate(new long[]{1000, 1000, 1000, 1000})
                 //.setSound(Uri.parse("android.resource://" + context.getPackageName() + "/" + R.raw.rihanna))
-                .setSmallIcon(R.drawable.ic_launcher)
+                //.setSmallIcon(R.drawable.ic_launcher)
                 .setContentIntent(pendingIntent).build();
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

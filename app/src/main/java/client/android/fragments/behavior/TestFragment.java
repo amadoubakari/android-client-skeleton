@@ -11,10 +11,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.flys.notification.dialog.DialogStyle;
+import com.flys.tools.dialog.AbstractDialogActivity;
+import com.flys.tools.dialog.EditDialogFragment;
 import com.flys.tools.dialog.MaterialNotificationDialog;
 import com.flys.generictools.dao.daoException.DaoException;
 import com.flys.notification.adapter.NotificationAdapter;
@@ -85,8 +88,9 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
         //ConfigDialogFragment configDialogFragment = ConfigDialogFragment.newInstance(new Notification("title", "subtitle", "context", null, null),new DialogStyle(activity.getColor(R.color.blue_300)));
         //configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         //configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
-        Log.e(getClass().getSimpleName(), "splashscreen");
-        FirebaseCommonTools.rateApplication(activity,true);
+        FragmentManager fm = getParentFragmentManager();
+        EditDialogFragment dialogActivity = new EditDialogFragment("Recommander", R.mipmap.ic_launcher,0);
+        dialogActivity.show(fm, "fragment_edit_name");
     }
 
     @Override

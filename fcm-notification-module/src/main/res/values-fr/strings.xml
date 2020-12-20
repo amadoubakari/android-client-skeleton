@@ -2,4 +2,5 @@
 <resources>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="view_notification_button_show_more">Voir plus</string>
+    <string name="view_notification_hide_msg">Cacher</string>
 </resources>

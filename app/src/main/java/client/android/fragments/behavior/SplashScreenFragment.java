@@ -1,6 +1,5 @@
 package client.android.fragments.behavior;
 
-import android.content.Intent;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;

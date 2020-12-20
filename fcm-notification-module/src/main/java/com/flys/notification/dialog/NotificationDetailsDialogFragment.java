@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.core.text.HtmlCompat;
 import androidx.fragment.app.DialogFragment;
 
@@ -29,8 +31,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class NotificationDetailsDialogFragment extends DialogFragment {
 
     private ImageView back;
-    private Notification notification;
-    private DialogStyle dialogStyle;
+    private static Notification notification;
+    private static DialogStyle dialogStyle;
     private TextView date;
     private TextView title;
     private TextView subTitle;
@@ -41,11 +43,16 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
     private BitmapDrawable data;
     private CircleImageView icon;
     private static Typeface typeface;
+    private TextView description;
+    private TextView dateTitle;
+    private CoordinatorLayout container;
 
-    public static NotificationDetailsDialogFragment newInstance(Context context1, Notification notification, DialogStyle dialogStyle) {
+    public static NotificationDetailsDialogFragment newInstance(Context context1, Notification notification1, DialogStyle dialogStyle1) {
         context = context1;
+        dialogStyle=dialogStyle1;
+        notification=notification1;
         formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
-        typeface = Typeface.createFromAsset(context.getAssets(), dialogStyle.getFontPathFile());
+        typeface = ResourcesCompat.getFont(context,dialogStyle.getFont());
         NotificationDetailsDialogFragment frag = new NotificationDetailsDialogFragment();
         Bundle bundle = new Bundle();
         bundle.putSerializable("notification", notification);
@@ -85,17 +92,38 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
         content = view.findViewById(R.id.content);
         image = view.findViewById(R.id.image);
         icon = view.findViewById(R.id.icon);
+        description = view.findViewById(R.id.description);
+        dateTitle = view.findViewById(R.id.date_title);
+        container = view.findViewById(R.id.notification_details_container);
+
         // Fetch arguments from bundle and set title
+        //container.setBackgroundColor(dialogStyle.getPrimaryTextColor());
         notification = (Notification) getArguments().getSerializable("notification");
         dialogStyle = (DialogStyle) getArguments().getSerializable("dialogStyle");
         data = Utils.loadImageFromStorage("glearning", notification.getImageName(), context);
         date.setText(formatter.format(notification.getDate()));
-        date.setTextColor(dialogStyle.getHeaderColor());
+        date.setTextColor(dialogStyle.getPrimaryTextColor());
+        date.setTypeface(typeface);
+        date.setTextColor(dialogStyle.getPrimaryTextColor());
+
         title.setText(notification.getTitle());
+        title.setTypeface(typeface);
+        title.setTextColor(dialogStyle.getSecondTextColor());
+
         subTitle.setText(notification.getSubTitle());
-        subTitle.setTextColor(dialogStyle.getHeaderColor());
+        subTitle.setTypeface(typeface);
+        subTitle.setTextColor(dialogStyle.getPrimaryTextColor());
+
+        description.setTypeface(typeface);
+        description.setTextColor(dialogStyle.getSecondTextColor());
+
+        dateTitle.setTypeface(typeface);
+        dateTitle.setTextColor(dialogStyle.getSecondTextColor());
+
         content.setText(HtmlCompat.fromHtml(notification.getContent(), HtmlCompat.FROM_HTML_MODE_LEGACY));
         content.setTypeface(typeface);
+        content.setTextColor(dialogStyle.getPrimaryTextColor());
+
         getDialog().setTitle(notification.getTitle());
         // Show soft keyboard automatically and request focus to field
         getDialog().getWindow().setSoftInputMode(
@@ -104,7 +132,7 @@ public class NotificationDetailsDialogFragment extends DialogFragment {
         if (notification.getImageName() != null && !notification.getImageName().isEmpty()) {
             image.setBackground(data);
             icon.setImageDrawable(data);
-            icon.setBorderColor(dialogStyle.getHeaderColor());
+            icon.setBorderColor(dialogStyle.getSecondTextColor());
         }
 
 

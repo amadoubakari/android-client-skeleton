@@ -16,6 +16,12 @@ public class DialogStyle implements Serializable {
     private int stytle;
     //font style path
     private String fontPathFile;
+    //second text color
+    private int secondTextColor;
+    //primary text color
+    private int primaryTextColor;
+    //font reference
+    private int font ;
 
     /**
      * Default constructor
@@ -30,23 +36,15 @@ public class DialogStyle implements Serializable {
         this.headerColor = headerColor;
     }
 
-    /**
-     * @param headerColor
-     * @param stytle
-     */
-    public DialogStyle(int headerColor, int stytle) {
-        this.headerColor = headerColor;
-        this.stytle = stytle;
-    }
 
     /**
      *
      * @param headerColor
-     * @param fontPathFile
+     * @param fontReference
      */
-    public DialogStyle(int headerColor, String fontPathFile) {
+    public DialogStyle(int headerColor, int fontReference) {
         this.headerColor = headerColor;
-        this.fontPathFile = fontPathFile;
+        this.font = fontReference;
     }
 
     /**
@@ -59,6 +57,32 @@ public class DialogStyle implements Serializable {
         this.headerColor = headerColor;
         this.stytle = stytle;
         this.fontPathFile = fontPathFile;
+    }
+
+    public DialogStyle(int headerColor, int stytle, String fontPathFile, int secondTextColor) {
+        this.headerColor = headerColor;
+        this.stytle = stytle;
+        this.fontPathFile = fontPathFile;
+        this.secondTextColor = secondTextColor;
+    }
+
+    public DialogStyle(int headerColor,String fontPathFile, int secondTextColor, int primaryTextColor) {
+        this.headerColor = headerColor;
+        this.fontPathFile = fontPathFile;
+        this.secondTextColor = secondTextColor;
+        this.primaryTextColor = primaryTextColor;
+    }
+    public DialogStyle(int headerColor,int secondTextColor, int primaryTextColor,int font) {
+        this.headerColor = headerColor;
+        this.secondTextColor = secondTextColor;
+        this.primaryTextColor = primaryTextColor;
+        this.font=font;
+    }
+
+    public DialogStyle(int primaryTextColor, int secondTextColor, int font) {
+        this.secondTextColor = secondTextColor;
+        this.primaryTextColor = primaryTextColor;
+        this.font=font;
     }
 
     public int getHeaderColor() {
@@ -83,5 +107,29 @@ public class DialogStyle implements Serializable {
 
     public void setFontPathFile(String fontPathFile) {
         this.fontPathFile = fontPathFile;
+    }
+
+    public int getSecondTextColor() {
+        return secondTextColor;
+    }
+
+    public void setSecondTextColor(int secondTextColor) {
+        this.secondTextColor = secondTextColor;
+    }
+
+    public int getPrimaryTextColor() {
+        return primaryTextColor;
+    }
+
+    public void setPrimaryTextColor(int primaryTextColor) {
+        this.primaryTextColor = primaryTextColor;
+    }
+
+    public int getFont() {
+        return font;
+    }
+
+    public void setFont(int font) {
+        this.font = font;
     }
 }
