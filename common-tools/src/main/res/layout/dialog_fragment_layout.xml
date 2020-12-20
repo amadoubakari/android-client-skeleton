@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
+    android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/data"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:height="5dp"
+        android:background="@android:color/transparent"
         android:gravity="top"
         android:hint="@string/dialog_fragment_layout_recommend_msg"
         android:inputType="textMultiLine"
         android:lines="50"
         android:maxLines="100"
         android:minLines="3"
-        android:overScrollMode="always"
+        android:overScrollMode="ifContentScrolls"
         android:paddingLeft="15dp"
+        android:paddingTop="5dp"
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
         android:scrollHorizontally="false"

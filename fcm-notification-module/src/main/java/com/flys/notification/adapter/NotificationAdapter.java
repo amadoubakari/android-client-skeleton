@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.core.text.HtmlCompat;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,8 +43,18 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         this.onclickListener = notificationOnclickListener;
         formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
         this.dialogStyle = dialogStyle;
-        typeface = Typeface.createFromAsset(context.getAssets(), dialogStyle.getFontPathFile());
+        typeface = ResourcesCompat.getFont(context,dialogStyle.getFont());
     }
+
+    public NotificationAdapter(Context context, List<Notification> notifications, DialogStyle dialogStyle, NotificationOnclickListener notificationOnclickListener, int font) {
+        this.notifications = notifications;
+        this.context = context;
+        this.onclickListener = notificationOnclickListener;
+        formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+        this.dialogStyle = dialogStyle;
+        typeface = ResourcesCompat.getFont(context,font);
+    }
+
 
     @NonNull
     @Override
@@ -67,14 +80,19 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         }
         holder.title.setText(notification.getTitle());
         holder.title.setTypeface(this.typeface);
+        holder.title.setTextColor(dialogStyle.getPrimaryTextColor());
         holder.subTitle.setText(String.valueOf(notification.getSubTitle()));
-        holder.subTitle.setTextColor(dialogStyle.getHeaderColor());
+        holder.subTitle.setTextColor(dialogStyle.getSecondTextColor());
         holder.subTitle.setTypeface(this.typeface);
         holder.content.setText(HtmlCompat.fromHtml(notification.getContent(), HtmlCompat.FROM_HTML_MODE_LEGACY));
         holder.content.setTypeface(this.typeface);
+        holder.content.setTextColor(dialogStyle.getPrimaryTextColor());
         holder.date.setText(formatter.format(notification.getDate()));
+        holder.date.setTextColor(dialogStyle.getPrimaryTextColor());
+        holder.date.setTypeface(this.typeface);
         holder.contentPreview.setText(notification.getSubTitle().concat(" ..."));
         holder.contentPreview.setTypeface(this.typeface);
+        holder.contentPreview.setTextColor(dialogStyle.getPrimaryTextColor());
         holder.hideImage.setOnClickListener(v -> {
             toggleSectionText(holder.hideImage, holder.lytExpandText, holder.nestedScrollView);
         });
