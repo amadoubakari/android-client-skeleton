@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -13,54 +14,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189485e5-5b2e-45ba-bfd1-08017de11ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_expand_more_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_more_vert_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_visibility_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/font/google_sans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-v26/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/arrays.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/drawable/ic_baseline_account_circle_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/font/google_sans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/font/google_sans_medium.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_splash_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/navigation_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/navigation_header_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/font_certs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/SplashScreenFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/SplashScreenFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/TestFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/TestFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_splash_screen.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/AbstractDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/dialog/EditDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/drawable/circular_progress_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/notification_dialog_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/notification_dialog_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fcm-notification-module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/NotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/NotificationAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/dialog/DialogStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/dialog/DialogStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/dialog/NotificationDetailsDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/dialog/NotificationDetailsDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/fragment/NotificationFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/anim/fade_in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/anim/fade_out.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_close_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_close_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_expand_arrow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_more_vert_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/notification.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/dialog_notification_details_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/dialog_notification_details_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/notification_dialog_fragment_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/notification_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/notification_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/notification_layout_frame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_notification_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_notification_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/navigation/notification.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/domain/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/domain/Notification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-en/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-fr/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generictools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/generictools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generictools/src/main/java/com/flys/generictools/reminder/NotificationScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/generictools/src/main/java/com/flys/generictools/reminder/NotificationScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generictools/src/main/res/drawable/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-authentication/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,18 +73,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hsRf7a9WoGXjXzZDQgplr1lnof" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="RZ8N30D4LHV" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-15T17:18:32.549Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-viewC:/Users/amadou.bakari/AppData/Local/Android/Sdk/sources/android-29/android/widget/EditText.java_SELECTED" value="EditText" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fcm-notification-module/src/main/res/font" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/common-tools/src/main/res/values" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common-tools/src/main/res/layout" />
     <property name="multi-representation-previewC:/Users/amadou.bakari/AppData/Local/Android/Sdk/sources/android-29/android/widget/EditText.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
@@ -112,12 +96,18 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\layout" />
+      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\values-fr" />
+      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res" />
+      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\drawable" />
+      <recent name="C:\projects\android\android-client-skeleton\fcm-notification-module\src\main\res\font" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.flys.tools.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\projects\android\android-client-skeleton\fcm-notification-module\src\main\res\font" />
-      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\java\com\flys\tools\utils" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\layout" />
     </key>
   </component>
   <component name="RunManager">
@@ -201,26 +191,27 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/fcm-notification-module" />
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="158" y="72" width="1095" height="507" key="#PSD" timestamp="1607855257580">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2157" y="110" width="1095" height="507" key="#PSD" timestamp="1608465854556">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="158" y="72" width="1085" height="507" key="#PSD/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605457414990" />
-    <state x="2157" y="110" key="#PSD/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602407429393" />
+    <state x="2157" y="110" key="#PSD/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608465854556" />
     <state x="158" y="72" width="1095" height="507" key="#PSD/0.0.1280.680@0.0.1280.680" timestamp="1607855257580" />
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604600637858">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604600637858" />
-    <state x="848" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1607966460503">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2685" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1609090371615">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="848" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1607966460503" />
-    <state x="2685" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604740446557" />
+    <state x="2685" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609090371614" />
     <state x="848" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1607855039062" />
     <state x="2477" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608306181568">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -233,11 +224,11 @@
     </state>
     <state x="221" y="95" key="AndroidCreateResourceDirectoryDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1601456777269" />
     <state x="2252" y="145" key="AndroidCreateResourceDirectoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608308504266" />
-    <state x="2252" y="145" key="AndroidCreateResourceFileDialog" timestamp="1605426985628">
+    <state x="2252" y="145" key="AndroidCreateResourceFileDialog" timestamp="1608468714667">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="221" y="95" key="AndroidCreateResourceFileDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1601456086354" />
-    <state x="2252" y="145" key="AndroidCreateResourceFileDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605426985628" />
+    <state x="2252" y="145" key="AndroidCreateResourceFileDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608468714667" />
     <state x="2653" y="501" key="AndroidCreateXmlResourceDialog" timestamp="1608308777323">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -251,26 +242,26 @@
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1600839143947" />
     <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604935244409" />
-    <state width="1220" height="283" key="GridCell.Tab.0.bottom" timestamp="1605639409727">
+    <state width="1220" height="192" key="GridCell.Tab.0.bottom" timestamp="1608577526991">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1220" height="133" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605630226761" />
-    <state width="1220" height="283" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605639409727" />
-    <state width="1220" height="283" key="GridCell.Tab.0.center" timestamp="1605639409727">
+    <state width="1220" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914050" />
+    <state width="1220" height="192" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608577526991" />
+    <state width="1220" height="192" key="GridCell.Tab.0.center" timestamp="1608577526990">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1220" height="133" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605630226761" />
-    <state width="1220" height="283" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605639409727" />
-    <state width="1220" height="283" key="GridCell.Tab.0.left" timestamp="1605639409727">
+    <state width="1220" height="161" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
+    <state width="1220" height="192" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608577526990" />
+    <state width="1220" height="192" key="GridCell.Tab.0.left" timestamp="1608577526990">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1220" height="133" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605630226760" />
-    <state width="1220" height="283" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605639409727" />
-    <state width="1220" height="283" key="GridCell.Tab.0.right" timestamp="1605639409727">
+    <state width="1220" height="161" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
+    <state width="1220" height="192" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608577526990" />
+    <state width="1220" height="192" key="GridCell.Tab.0.right" timestamp="1608577526991">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1220" height="133" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605630226761" />
-    <state width="1220" height="283" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605639409727" />
+    <state width="1220" height="161" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
+    <state width="1220" height="192" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608577526991" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1605455877189">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -278,6 +269,10 @@
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605455877189" />
     <state x="2133" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604596359309" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604336929517" />
+    <state x="2690" y="298" key="chooseDestDirectoryDialog" timestamp="1608468757071">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2690" y="298" key="chooseDestDirectoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608468757071" />
     <state x="343" y="54" key="com.intellij.ide.util.TipDialog" timestamp="1601527313192">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

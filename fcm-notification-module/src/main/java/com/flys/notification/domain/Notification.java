@@ -21,10 +21,12 @@ public class Notification implements Serializable {
     private String content;
     @DatabaseField
     private String imageUrl;
-    @DatabaseField (dataType=DataType.DATE_STRING,canBeNull = false)
+    @DatabaseField(dataType = DataType.DATE_STRING, canBeNull = false)
     private Date date;
     @DatabaseField
     private String imageName;
+    @DatabaseField(canBeNull = false, defaultValue = "false")
+    private boolean seen;
 
     private byte[] image;
 
@@ -68,6 +70,17 @@ public class Notification implements Serializable {
         this.imageUrl = imageUrl;
         this.date = date;
         this.imageName = imageName;
+        this.image = image;
+    }
+
+    public Notification(String title, String subTitle, String content, String imageUrl, Date date, String imageName, boolean seen, byte[] image) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.content = content;
+        this.imageUrl = imageUrl;
+        this.date = date;
+        this.imageName = imageName;
+        this.seen = seen;
         this.image = image;
     }
 
@@ -135,6 +148,14 @@ public class Notification implements Serializable {
         this.imageName = imageName;
     }
 
+    public boolean isSeen() {
+        return seen;
+    }
+
+    public void setSeen(boolean seen) {
+        this.seen = seen;
+    }
+
     @Override
     public String toString() {
         return "Notification{" +
@@ -145,6 +166,7 @@ public class Notification implements Serializable {
                 ", imageUrl='" + imageUrl + '\'' +
                 ", date=" + date +
                 ", imageName='" + imageName + '\'' +
+                ", seen=" + seen +
                 ", image=" + Arrays.toString(image) +
                 '}';
     }

@@ -3,4 +3,6 @@
     <string name="abstract_dialog_activity_button_send">Send</string>
     <string name="abstract_dialog_activity_button_cancel">Cancel</string>
     <string name="dialog_fragment_layout_recommend_msg">A word to your beneficiary ?</string>
+    <string name="activity_main_username">Username</string>
+    <string name="activity_main_email_address">Email</string>
 </resources>
