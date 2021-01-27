@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout95"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout97"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="?attr/actionBarSize"
+        app:layout_constraintEnd_toStartOf="@+id/guideline95"
+        app:layout_constraintStart_toStartOf="@+id/guideline94"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="56dp"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_about_dictionary_header"
+            android:textColor="@color/app_text_color"
+            android:fontFamily="@font/google_sans"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:background="@color/blue_500" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version"
+                android:fontFamily="@font/google_sans"
+                android:textSize="14sp"
+                android:textColor="@color/app_text_second_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version_msg"
+                android:fontFamily="@font/google_sans"
+                android:textSize="14sp"
+                android:textColor="@color/app_text_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_last_update_msg"
+                android:fontFamily="@font/google_sans"
+                android:textSize="14sp"
+                android:textColor="@color/app_text_second_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans"
+                android:text="@string/about_releasing_date"
+                android:textSize="14sp"
+                android:textColor="@color/app_text_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_mxlarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mini_dictionnaire_informatique_de_poche_msg"
+            android:fontFamily="@font/google_sans"
+            android:textSize="14sp"
+            android:textColor="@color/app_text_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_mxlarge" />
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open source ici"
+            android:textColor="@color/app_text_color"
+            android:fontFamily="@font/google_sans"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout98"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline95"
+        app:layout_constraintStart_toStartOf="@+id/guideline94">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout98"
+        app:layout_constraintEnd_toStartOf="@+id/guideline95"
+        app:layout_constraintStart_toStartOf="@+id/guideline94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/site"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/https_site_kyossi_com"
+        android:fontFamily="@font/google_sans"
+        android:textSize="14sp"
+        android:textColor="@color/blue_600"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline95"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
