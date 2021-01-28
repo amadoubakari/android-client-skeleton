@@ -14,8 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189485e5-5b2e-45ba-bfd1-08017de11ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_about.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_about.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
     <property name="android-custom-viewC:/Users/amadou.bakari/AppData/Local/Android/Sdk/sources/android-29/android/widget/EditText.java_SELECTED" value="EditText" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common-tools/src/main/res/values" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common-tools/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../architecture-samples" />
     <property name="multi-representation-previewC:/Users/amadou.bakari/AppData/Local/Android/Sdk/sources/android-29/android/widget/EditText.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
@@ -208,29 +212,33 @@
     <state x="499" y="153" key="AndroidCreateXmlResourceDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605867503052" />
     <state x="2653" y="501" key="AndroidCreateXmlResourceDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608308777323" />
     <state x="499" y="153" key="AndroidCreateXmlResourceDialog/0.0.1280.680@0.0.1280.680" timestamp="1607824510799" />
-    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1604935244409">
+    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1611818425950">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604935244409" />
-    <state width="1220" height="192" key="GridCell.Tab.0.bottom" timestamp="1608577526991">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611818425949" />
+    <state width="1877" height="219" key="GridCell.Tab.0.bottom" timestamp="1611816842797">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914050" />
+    <state width="1877" height="219" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611816842797" />
     <state width="1220" height="192" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608577526991" />
-    <state width="1220" height="192" key="GridCell.Tab.0.center" timestamp="1608577526990">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="219" key="GridCell.Tab.0.center" timestamp="1611816842796">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="161" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
+    <state width="1877" height="219" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611816842796" />
     <state width="1220" height="192" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608577526990" />
-    <state width="1220" height="192" key="GridCell.Tab.0.left" timestamp="1608577526990">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="219" key="GridCell.Tab.0.left" timestamp="1611816842795">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="161" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
+    <state width="1877" height="219" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611816842795" />
     <state width="1220" height="192" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608577526990" />
-    <state width="1220" height="192" key="GridCell.Tab.0.right" timestamp="1608577526991">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="219" key="GridCell.Tab.0.right" timestamp="1611816842796">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="161" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
+    <state width="1877" height="219" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611816842796" />
     <state width="1220" height="192" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608577526991" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1605455877189">
       <screen x="0" y="0" width="1280" height="680" />
