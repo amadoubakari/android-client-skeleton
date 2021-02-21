@@ -15,8 +15,9 @@
         android:fontFamily="@font/raleway"
         android:text="Splash"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--  This is your template view -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
@@ -24,6 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Splashscreen" />
+        app:layout_constraintTop_toBottomOf="@+id/Splashscreen"
+        android:visibility="visible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

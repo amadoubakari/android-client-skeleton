@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonToolsViews">
+        <attr name="app_background_color" format="color" />
+        <attr name="app_text_color" format="color" />
+        <attr name="app_name" format="string" />
+        <attr name="app_version" format="string" />
+    </declare-styleable>
+</resources>

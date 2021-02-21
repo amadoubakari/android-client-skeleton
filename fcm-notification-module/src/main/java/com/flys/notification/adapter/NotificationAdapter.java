@@ -43,7 +43,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         this.onclickListener = notificationOnclickListener;
         formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
         this.dialogStyle = dialogStyle;
-        typeface = ResourcesCompat.getFont(context,dialogStyle.getFont());
+        typeface = ResourcesCompat.getFont(context, dialogStyle.getFont());
     }
 
     public NotificationAdapter(Context context, List<Notification> notifications, DialogStyle dialogStyle, NotificationOnclickListener notificationOnclickListener, int font) {
@@ -52,7 +52,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         this.onclickListener = notificationOnclickListener;
         formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
         this.dialogStyle = dialogStyle;
-        typeface = ResourcesCompat.getFont(context,font);
+        typeface = ResourcesCompat.getFont(context, font);
     }
 
 
@@ -61,8 +61,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.view_notification_item, parent, false);
         return new Holder(view, this.onclickListener);
-    }
 
+    }
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int position) {
@@ -90,7 +90,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.date.setText(formatter.format(notification.getDate()));
         holder.date.setTextColor(dialogStyle.getPrimaryTextColor());
         holder.date.setTypeface(this.typeface);
-        holder.contentPreview.setText(notification.getSubTitle().concat(" ..."));
+        holder.contentPreview.setText(notification.getContent().concat(" ..."));
         holder.contentPreview.setTypeface(this.typeface);
         holder.contentPreview.setTextColor(dialogStyle.getPrimaryTextColor());
         holder.hideImage.setOnClickListener(v -> {

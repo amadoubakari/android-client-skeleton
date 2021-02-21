@@ -2,6 +2,8 @@ package client.android.fragments.behavior;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,11 +12,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.flys.notification.adapter.AdsNotificationAdapter;
 import com.flys.notification.dialog.DialogStyle;
 import com.flys.tools.dialog.AbstractDialogActivity;
 import com.flys.tools.dialog.EditDialogFragment;
@@ -42,9 +46,16 @@ import client.android.dao.db.UserDao;
 import client.android.dao.db.UserDaoImpl;
 
 import com.flys.notification.dialog.NotificationDetailsDialogFragment;
+import com.google.android.ads.nativetemplates.NativeTemplateStyle;
+import com.google.android.ads.nativetemplates.TemplateView;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.nativead.NativeAdOptions;
 import com.kyossi.firebase.tools.FirebaseCommonTools;
 
-@EFragment(R.layout.fragment_dummy_layout)
+@EFragment(R.layout.fragment_notif_layout)
 @OptionsMenu(R.menu.menu_vide)
 public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer, NotificationAdapter.NotificationOnclickListener {
 
@@ -53,12 +64,14 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     @Bean(UserDaoImpl.class)
     protected UserDao userDao;
-    @ViewById(R.id.Splashscreen)
-    protected TextView msg;
+    //@ViewById(R.id.Splashscreen)
+    //protected TextView msg;
 
     MaterialNotificationDialog dialog;
     List<Notification> notifications;
-    private NotificationAdapter notificationAdapter;
+    private AdsNotificationAdapter notificationAdapter;
+    //@ViewById(R.id.my_template)
+    //protected TemplateView myTemplateView;
 
     @Click(R.id.Splashscreen)
     void splas() {
@@ -89,7 +102,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
         //configDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         //configDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
         FragmentManager fm = getParentFragmentManager();
-        EditDialogFragment dialogActivity = new EditDialogFragment("Recommander", R.mipmap.ic_launcher,0);
+        EditDialogFragment dialogActivity = new EditDialogFragment("Recommander", R.mipmap.ic_launcher, 0);
         dialogActivity.show(fm, "fragment_edit_name");
     }
 
@@ -112,59 +125,74 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
     @Override
     protected void initView(CoreState previousState) {
         // Create new fragment and transaction
-        try {
+       /* try {
             User user = userDao.save(new User("AMADOU BAKARI"));
             msg.setText(userDao.findById(user.getId()).getNom());
         } catch (DaoException e) {
             e.printStackTrace();
         }
+       */
         notifications = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            notifications.add(new Notification("Dubun Guiziga", "Animaux en Guiziga", "<h2>Languages</h2>\n" +
-                    "  <ul>\n" +
-                    "    <li>English</li>\n" +
-                    "    <li>Spanish</li>\n" +
-                    "    <li>Japanese</li>\n" +
-                    "  </ul>\n" +
-                    "  <h2>Counting in English</h2>\n" +
-                    "  <ol>\n" +
-                    "    <li>one</li>\n" +
-                    "    <li>two</li>\n" +
-                    "    <li>three</li>\n" +
-                    "  </ol>\n" +
-                    "  <h2>Counting in Other Languages</h2>\n" +
-                    "  <ul>\n" +
-                    "    <li>Spanish\n" +
-                    "      <ol>\n" +
-                    "        <li>uno</li>\n" +
-                    "        <li>dos</li>\n" +
-                    "        <li>tres</li>\n" +
-                    "      </ol>\n" +
-                    "    </li>\n" +
-                    "    <li>Japanese\n" +
-                    "      <ol>\n" +
-                    "        <li>ichi</li>\n" +
-                    "        <li>ni</li>\n" +
-                    "        <li>san</li>\n" +
-                    "      </ol>      \n" +
-                    "    </li>\n" +
-                    "  </ul>", null, new Date(), "amadou.jpg",null));
+        for (int i = 0; i < 15; i++) {
+            notifications.add(new Notification("Dubun Guiziga", "Animaux en Guiziga", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", null, new Date(), "amadou.jpg", null));
         }
-        notificationAdapter = new NotificationAdapter(activity, notifications, new DialogStyle(activity.getColor(R.color.blue_500),1,"fonts/Roboto-Thin.ttf"),this);
+        notificationAdapter = new AdsNotificationAdapter(activity, notifications, new DialogStyle(activity.getColor(R.color.blue_500), activity.getColor(R.color.amber_400), R.font.google_sans),true, "ca-app-pub-3940256099942544/2247696110", new AdsNotificationAdapter.NotificationOnclickListener() {
+            @Override
+            public void onButtonClickListener(int position) {
+
+            }
+
+            @Override
+            public void onMenuClickListener(View v, int position) {
+
+            }
+        }
+        );
+
+
         notificationAdapter.refreshAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(activity));
         recyclerView.setAdapter(notificationAdapter);
 
+        //initializeAds();
+    }
 
+    private void initializeAds2() {
+        AdLoader adLoader = new AdLoader.Builder(activity, "ca-app-pub-3940256099942544/2247696110")
+                .forNativeAd(nativeAd -> {
+                    NativeTemplateStyle styles = new
+                            NativeTemplateStyle.Builder()
+                            .withMainBackgroundColor(new ColorDrawable(activity.getColor(R.color.gnt_white)))
+                            .withPrimaryTextTypeface(ResourcesCompat.getFont(activity, R.font.google_sans))
+                            .build();
+
+                    //TemplateView template = findViewById(R.id.my_template);
+                    //myTemplateView.setStyles(styles);
+                    //myTemplateView.setNativeAd(nativeAd);
+                })
+                .withAdListener(new AdListener() {
+                    @Override
+                    public void onAdFailedToLoad(LoadAdError adError) {
+                        // Handle the failure by logging, altering the UI, and so on.
+                    }
+                })
+                .withNativeAdOptions(new NativeAdOptions.Builder()
+                        // Methods in the NativeAdOptions.Builder class can be
+                        // used here to specify individual options settings.
+                        .build())
+                .build();
+
+        adLoader.loadAd(new AdRequest.Builder().build());
     }
 
     @Override
     protected void updateOnSubmit(CoreState previousState) {
-
+        //initializeAds();
     }
 
     @Override
     protected void updateOnRestore(CoreState previousState) {
+        //initializeAds();
 
     }
 
@@ -210,7 +238,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     @Override
     public void onButtonClickListener(int position) {
-        NotificationDetailsDialogFragment notificationDetailsDialogFragment = NotificationDetailsDialogFragment.newInstance(activity, notifications.get(position),new DialogStyle(activity.getColor(R.color.blue_300)));
+        NotificationDetailsDialogFragment notificationDetailsDialogFragment = NotificationDetailsDialogFragment.newInstance(activity, notifications.get(position), new DialogStyle(activity.getColor(R.color.blue_300)));
         notificationDetailsDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         notificationDetailsDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
     }
