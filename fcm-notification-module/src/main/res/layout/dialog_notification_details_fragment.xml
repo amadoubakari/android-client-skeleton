@@ -85,15 +85,6 @@
                             android:gravity="center_vertical"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:layout_width="@dimen/spacing_middle"
-                                android:layout_height="@dimen/spacing_middle"
-                                android:layout_marginTop="@dimen/spacing_xsmall"
-                                android:layout_marginEnd="@dimen/spacing_medium"
-                                android:layout_marginRight="@dimen/spacing_medium"
-                                app:tint="@color/grey_60"
-                            />
-
                             <TextView
                                 android:id="@+id/subtitle"
                                 android:layout_width="wrap_content"

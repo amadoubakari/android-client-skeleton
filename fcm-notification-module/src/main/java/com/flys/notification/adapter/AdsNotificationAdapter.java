@@ -20,11 +20,11 @@ import androidx.core.text.HtmlCompat;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.flys.google.ads.TemplateView;
 import com.flys.notification.R;
 import com.flys.notification.dialog.DialogStyle;
 import com.flys.notification.domain.Notification;
 import com.flys.notification.utils.Utils;
-import com.google.android.ads.nativetemplates.TemplateView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

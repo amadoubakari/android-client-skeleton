@@ -80,7 +80,7 @@ dependencies {
     implementation project(':fcm-notification-module')
     implementation project(':user-authentication')
     implementation project(':firebase-tools')
-    implementation project(':nativetemplates')
+    implementation project(':google-ads')
 }
 
 repositories {

@@ -2,12 +2,8 @@ package client.android.fragments.behavior;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,10 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.flys.notification.adapter.AdsNotificationAdapter;
 import com.flys.notification.dialog.DialogStyle;
-import com.flys.tools.dialog.AbstractDialogActivity;
 import com.flys.tools.dialog.EditDialogFragment;
 import com.flys.tools.dialog.MaterialNotificationDialog;
-import com.flys.generictools.dao.daoException.DaoException;
 import com.flys.notification.adapter.NotificationAdapter;
 import com.flys.notification.domain.Notification;
 
@@ -41,19 +35,16 @@ import java.util.List;
 import client.android.R;
 import client.android.architecture.core.AbstractFragment;
 import client.android.architecture.custom.CoreState;
-import client.android.dao.db.User;
 import client.android.dao.db.UserDao;
 import client.android.dao.db.UserDaoImpl;
 
 import com.flys.notification.dialog.NotificationDetailsDialogFragment;
-import com.google.android.ads.nativetemplates.NativeTemplateStyle;
-import com.google.android.ads.nativetemplates.TemplateView;
+import com.flys.google.ads.NativeTemplateStyle;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.nativead.NativeAdOptions;
-import com.kyossi.firebase.tools.FirebaseCommonTools;
 
 @EFragment(R.layout.fragment_notif_layout)
 @OptionsMenu(R.menu.menu_vide)

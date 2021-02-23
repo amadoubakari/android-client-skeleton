@@ -9,7 +9,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        project.archivesBaseName = 'nativetemplate'
+        project.archivesBaseName = 'google-ads'
     }
 
     buildTypes {
@@ -73,9 +73,9 @@ afterEvaluate {
                 // Applies the component for the debug build variant.
                 from components.debug
 
-                groupId = 'com.google.android.ads'
-                artifactId = 'nativetemplates'
-                version = '1.2'
+                groupId = 'com.flys.google.ads'
+                artifactId = 'ads'
+                version = '1.0'
             }
         }
     }

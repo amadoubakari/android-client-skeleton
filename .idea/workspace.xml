@@ -6,55 +6,42 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="189485e5-5b2e-45ba-bfd1-08017de11ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notif_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_about.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/values.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/AdsNotificationAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_ads_notification_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nativetemplates/src/main/res/drawable/ic_baseline_visibility_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nativetemplates/src/main/res/layout/gnt_ads_view_notification_item.xml" afterDir="false" />
+    <list default="true" id="347c4a97-8c95-4fd3-adf1-88e3beca35bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/SplashScreenFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/SplashScreenFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/TestFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/TestFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dummy_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dummy_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/font/google_sans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/font/google_sans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/font/google_sans_medium.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/dialog_fragment_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_splash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/navigation_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/navigation_header.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/navigation_header_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values/font_certs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fcm-notification-module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/NotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/NotificationAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/AdsNotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/AdsNotificationAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_notification_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_notification_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-v26/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values-v26/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generictools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/generictools/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/dialog_notification_details_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/dialog_notification_details_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_ads_notification_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_ads_notification_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/proguard-rules.pgcfg" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/proguard-rules.pgcfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/NativeTemplateStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/java/com/flys/google/ads/NativeTemplateStyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/java/com/flys/google/ads/TemplateView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/drawable/gnt_outline_shape.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/drawable/gnt_outline_shape.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/drawable/gnt_rounded_corners_shape.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/drawable/gnt_rounded_corners_shape.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/drawable/ic_baseline_visibility_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/drawable/ic_baseline_visibility_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/layout/gnt_ads_view_notification_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/layout/gnt_ads_view_notification_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/layout/gnt_medium_template_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/layout/gnt_medium_template_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/layout/gnt_small_template_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/layout/gnt_small_template_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nativetemplates/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-authentication/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +57,7 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/nativetemplates">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$">
+        <task path="$PROJECT_DIR$/google-ads">
           <activation />
         </task>
         <task path="$PROJECT_DIR$/fcm-notification-module">
@@ -89,17 +73,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="cleanup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
                 <item name="fcm-notification-module" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -118,18 +91,18 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
-                <item name="nativetemplates" type="2d1252cf:ModuleNode" />
+                <item name="google-ads" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
-                <item name="nativetemplates" type="2d1252cf:ModuleNode" />
+                <item name="google-ads" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
-                <item name="nativetemplates" type="2d1252cf:ModuleNode" />
+                <item name="google-ads" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
@@ -140,65 +113,27 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-        <option value="valueResourceFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1hsRf7a9WoGXjXzZDQgplr1lnof" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1onwFwwNeZkFzMst2FDAXykT4ra" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="RZ8N30D4LHV" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-15T17:18:32.549Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android-custom-viewC:/Users/amadou.bakari/AppData/Local/Android/Sdk/sources/android-29/android/widget/EditText.java_SELECTED" value="EditText" />
-    <property name="android-custom-viewC:/projects/android/android-client-skeleton/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_SELECTED" value="TemplateView" />
+    <property name="android-custom-viewC:/projects/android/android-client-skeleton/google-ads/src/main/java/com/flys/google/ads/TemplateView.java_SELECTED" value="TemplateView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/common-tools/src/main/res/values" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nativetemplates/src/main/res/layout" />
-    <property name="multi-representation-previewC:/Users/amadou.bakari/AppData/Local/Android/Sdk/sources/android-29/android/widget/EditText.java_selected" value="Custom views" />
-    <property name="multi-representation-previewC:/projects/android/android-client-skeleton/nativetemplates/src/main/java/com/google/android/ads/nativetemplates/TemplateView.java_selected" value="Custom views" />
-    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ky-Dico" />
+    <property name="multi-representation-previewC:/projects/android/android-client-skeleton/google-ads/src/main/java/com/flys/google/ads/TemplateView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.26522842" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Signing Configs" />
-    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\values-en" />
-      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\layout" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.flys.notification.adapter" />
-      <recent name="com.flys.tools.utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\projects\android\android-client-skeleton\nativetemplates\src\main\res\layout" />
-      <recent name="C:\projects\android\android-client-skeleton\nativetemplates\src\main\res\drawable" />
-      <recent name="C:\projects\android\android-client-skeleton\app\src\main\res\layout" />
-      <recent name="C:\projects\android\android-client-skeleton\common-tools\src\main\res\layout" />
-      <recent name="C:\projects\android\android-client-skeleton\fcm-notification-module\src\main\res\layout" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -261,7 +196,6 @@
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="android-client-skeleton:fcm-notification-module [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -283,48 +217,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="android-client-skeleton:nativetemplates [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="android-client-skeleton:google-ads [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/nativetemplates" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="android-client-skeleton:nativetemplates [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/nativetemplates" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="android-client-skeleton:nativetemplates [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/nativetemplates" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/google-ads" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -342,10 +238,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.android-client-skeleton:nativetemplates [publishToMavenLocal]" />
-        <item itemvalue="Gradle.android-client-skeleton:nativetemplates [build]" />
-        <item itemvalue="Gradle.android-client-skeleton:nativetemplates [clean]" />
         <item itemvalue="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]" />
+        <item itemvalue="Gradle.android-client-skeleton:google-ads [publishToMavenLocal]" />
       </list>
     </recent_temporary>
   </component>
@@ -354,132 +248,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="189485e5-5b2e-45ba-bfd1-08017de11ed9" name="Default Changelist" comment="" />
-      <created>1600797913650</created>
+      <changelist id="347c4a97-8c95-4fd3-adf1-88e3beca35bc" name="Default Changelist" comment="" />
+      <created>1613935562548</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600797913650</updated>
+      <updated>1613935562548</updated>
     </task>
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/fcm-notification-module" />
-    </ignored-roots>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="158" y="72" width="966" height="698" key="#PSD" timestamp="1613290054321">
+    <state x="157" y="86" key="#PSD" timestamp="1614000207231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="158" y="72" width="1085" height="507" key="#PSD/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605457414990" />
-    <state x="2157" y="44" width="966" height="698" key="#PSD/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612199058560" />
-    <state x="158" y="72" width="1095" height="507" key="#PSD/0.0.1280.680@0.0.1280.680" timestamp="1613290054321" />
-    <state x="233" y="0" key="#Plugins" timestamp="1613378376852">
+    <state x="157" y="86" key="#PSD/0.0.1280.680@0.0.1280.680" timestamp="1614000207231" />
+    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1613989238739">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Plugins/0.0.1280.680@0.0.1280.680" timestamp="1613378376852" />
-    <state x="447" y="207" key="#Updates" timestamp="1613136521344">
+    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1613989238739" />
+    <state width="1218" height="75" key="GridCell.Tab.0.bottom" timestamp="1614053186876">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="447" y="207" key="#Updates/0.0.1280.680@0.0.1280.680" timestamp="1613136521344" />
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611842622095">
+    <state width="1218" height="75" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614053186876" />
+    <state width="1218" height="75" key="GridCell.Tab.0.center" timestamp="1614053186876">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1611842622095" />
-    <state x="848" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1613804908781">
+    <state width="1218" height="75" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614053186876" />
+    <state width="1218" height="75" key="GridCell.Tab.0.left" timestamp="1614053186875">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="848" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1607966460503" />
-    <state x="2685" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609090371614" />
-    <state x="848" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1613804908781" />
-    <state x="2477" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611919049923">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608299197990" />
-    <state x="2477" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611919049923" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607850655052" />
-    <state x="2252" y="145" key="AndroidCreateResourceDirectoryDialog" timestamp="1608308504266">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2252" y="145" key="AndroidCreateResourceDirectoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608308504266" />
-    <state x="2252" y="145" key="AndroidCreateResourceFileDialog" timestamp="1611901391092">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2252" y="145" key="AndroidCreateResourceFileDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611901391092" />
-    <state x="2653" y="501" key="AndroidCreateXmlResourceDialog" timestamp="1611924039044">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="499" y="153" key="AndroidCreateXmlResourceDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605867503052" />
-    <state x="2653" y="501" key="AndroidCreateXmlResourceDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611924039044" />
-    <state x="499" y="153" key="AndroidCreateXmlResourceDialog/0.0.1280.680@0.0.1280.680" timestamp="1607824510799" />
-    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1612192054488">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612192054488" />
-    <state width="1220" height="110" key="GridCell.Tab.0.bottom" timestamp="1613894728363">
+    <state width="1218" height="75" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614053186875" />
+    <state width="1218" height="75" key="GridCell.Tab.0.right" timestamp="1614053186876">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1220" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914050" />
-    <state width="1877" height="327" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613566827505" />
-    <state width="1220" height="110" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613894728363" />
-    <state width="1220" height="110" key="GridCell.Tab.0.center" timestamp="1613894728362">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1220" height="161" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
-    <state width="1877" height="327" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613566827505" />
-    <state width="1220" height="110" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613894728362" />
-    <state width="1220" height="110" key="GridCell.Tab.0.left" timestamp="1613894728362">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1220" height="161" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
-    <state width="1877" height="327" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613566827504" />
-    <state width="1220" height="110" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613894728362" />
-    <state width="1220" height="110" key="GridCell.Tab.0.right" timestamp="1613894728363">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1220" height="161" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608569914049" />
-    <state width="1877" height="327" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613566827505" />
-    <state width="1220" height="110" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613894728363" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1605455877189">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1605455877189" />
-    <state x="2690" y="298" key="chooseDestDirectoryDialog" timestamp="1608468757071">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2690" y="298" key="chooseDestDirectoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608468757071" />
-    <state x="346" y="73" width="587" height="534" key="find.popup" timestamp="1613319928544">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="2439" y="112" width="881" height="817" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612193702613" />
-    <state x="346" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1613319928543" />
-    <state x="2216" y="136" key="psd.add.library.dependency.panel.dimension" timestamp="1612193443114">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2216" y="136" key="psd.add.library.dependency.panel.dimension/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612193443114" />
-    <state x="2375" y="39" key="psd.add.module.dependency.panel.dimension" timestamp="1612193412080">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2375" y="39" key="psd.add.module.dependency.panel.dimension/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612193412080" />
-    <state x="297" y="153" key="run.anything.popup" timestamp="1607855134701">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="297" y="153" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1607855134701" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611568072800">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611568072800" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/NotificationAdapter.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1218" height="75" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614053186876" />
   </component>
 </project>

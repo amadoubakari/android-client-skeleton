@@ -1,4 +1,4 @@
-include ':nativetemplates'
+include ':google-ads'
 include ':firebase-tools'
 include ':user-authentication'
 include ':app', ':common-tools', ':generictools'
