@@ -21,6 +21,7 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -48,7 +49,7 @@ public class TemplateView extends FrameLayout {
   private TextView tertiaryView;
   private ImageView iconView;
   private MediaView mediaView;
-  private MaterialButton callToActionView;
+  private Button callToActionView;
   private MaterialCardView background;
 
   private static final String MEDIUM_TEMPLATE = "medium_template";

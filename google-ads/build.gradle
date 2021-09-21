@@ -7,7 +7,6 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         project.archivesBaseName = 'google-ads'
     }
@@ -64,8 +63,8 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.google.android.ads'
-                artifactId = 'nativetemplates'
+                groupId = 'com.flys.google.ads'
+                artifactId = 'ads'
                 version = '1.0'
             }
             // Creates a Maven publication called “debug”.
@@ -75,7 +74,7 @@ afterEvaluate {
 
                 groupId = 'com.flys.google.ads'
                 artifactId = 'ads'
-                version = '1.0'
+                version = '1.0.8'
             }
         }
     }

@@ -67,7 +67,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.3'
     api group: 'com.j256.ormlite', name: 'ormlite-android', version: '5.3'
     api 'com.google.firebase:firebase-storage:19.2.1'
-    api 'com.flys.google.ads:ads:1.0'
+    api 'com.flys.google.ads:ads:1.0.8'
     //api project(':nativetemplates')
     // FirebaseUI Storage only
     api 'com.firebaseui:firebase-ui-storage:6.2.0'
@@ -92,7 +92,7 @@ afterEvaluate {
                 from components.debug
                 groupId = 'com.flys'
                 artifactId = 'notification'
-                version = '1.9'
+                version = '1.0.2.2'
             }
         }
     }

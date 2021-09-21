@@ -1,6 +1,7 @@
 package com.flys.tools.utils;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
@@ -10,13 +11,18 @@ import android.net.Uri;
 import android.os.Environment;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.TextView;
 
+import androidx.core.app.TaskStackBuilder;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -270,4 +276,78 @@ public class Utils implements Serializable {
         return facebookUrl;
     }
 
+    /**
+     * Suppression d'un fichier existant
+     *
+     * @param fileName
+     * @param context
+     */
+    public static boolean fileExist(String dirName, String fileName, Context context) {
+        ContextWrapper cw = new ContextWrapper(context);
+        File directory = cw.getDir(dirName, Context.MODE_PRIVATE);
+        // Create imageDir
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+        File file = new File(directory, fileName);
+        return file.exists();
+    }
+
+
+
+
+    public static void changeSearchTextColor(Context context, View view, int font) {
+        if (view != null) {
+            if (view instanceof TextView) {
+                ((TextView) view).setTextColor(ContextCompat.getColor(context, R.color.app_text_color));
+                ((TextView) view).setTextSize(16);
+                ((TextView) view).setTypeface(ResourcesCompat.getFont(context, font));
+                view.setBackgroundColor(ContextCompat.getColor(context, R.color.app_background_color));
+            } else if (view instanceof ViewGroup) {
+                ViewGroup viewGroup = (ViewGroup) view;
+                for (int i = 0; i < viewGroup.getChildCount(); i++) {
+                    changeSearchTextColor(context, viewGroup.getChildAt(i), font);
+                }
+            }
+        }
+    }
+
+
+    public static int getThemeAccentColor (final Context context) {
+        final TypedValue value = new TypedValue ();
+        context.getTheme ().resolveAttribute (androidx.core.R.attr.colorAccent, value, true);
+        return value.data;
+    }
+
+    /**
+     * @param context
+     * @param view
+     * @param font
+     */
+    public static void changeSearchTextColor(Context context, View view, int font) {
+        if (view != null) {
+            if (view instanceof TextView) {
+                ((TextView) view).setTextColor(ContextCompat.getColor(context, R.color.app_text_color));
+                ((TextView) view).setTextSize(16);
+                ((TextView) view).setTypeface(ResourcesCompat.getFont(context, font));
+                view.setBackgroundColor(ContextCompat.getColor(context, R.color.app_background_color));
+            } else if (view instanceof ViewGroup) {
+                ViewGroup viewGroup = (ViewGroup) view;
+                for (int i = 0; i < viewGroup.getChildCount(); i++) {
+                    changeSearchTextColor(context, viewGroup.getChildAt(i), font);
+                }
+            }
+        }
+    }
+
+    /**
+     *
+     * @param context
+     * @param activityClass
+     */
+    public static void restartApplication(DApplicationContext context, Class activityClass) {
+        TaskStackBuilder.create(context)
+                .addNextIntent(new Intent(context, activityClass))
+                .startActivities();
+    }
 }

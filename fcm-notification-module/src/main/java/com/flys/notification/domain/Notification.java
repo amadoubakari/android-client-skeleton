@@ -27,6 +27,10 @@ public class Notification implements Serializable {
     private String imageName;
     @DatabaseField(canBeNull = false, defaultValue = "false")
     private boolean seen;
+    @DatabaseField
+    private String source;
+    @DatabaseField
+    private String sourceIcon;
 
     private byte[] image;
 
@@ -156,6 +160,22 @@ public class Notification implements Serializable {
         this.seen = seen;
     }
 
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    public String getSourceIcon() {
+        return sourceIcon;
+    }
+
+    public void setSourceIcon(String sourceIcon) {
+        this.sourceIcon = sourceIcon;
+    }
+
     @Override
     public String toString() {
         return "Notification{" +
@@ -167,6 +187,8 @@ public class Notification implements Serializable {
                 ", date=" + date +
                 ", imageName='" + imageName + '\'' +
                 ", seen=" + seen +
+                ", source='" + source + '\'' +
+                ", sourceIcon='" + sourceIcon + '\'' +
                 ", image=" + Arrays.toString(image) +
                 '}';
     }

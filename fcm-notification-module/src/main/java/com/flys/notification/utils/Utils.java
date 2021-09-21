@@ -21,6 +21,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.Period;
 
 /**
  * @author AMADOU BAKARI
@@ -73,23 +75,14 @@ public class Utils implements Serializable {
     }
 
     /**
-     *
      * @param context
      * @param templateView
      * @param adsId
      * @param adsNotificationContainer
      */
     public static void initializeAds(Context context, TemplateView templateView, String adsId, ConstraintLayout adsNotificationContainer) {
-        AdLoader adLoader = new AdLoader.Builder(context,adsId)
+        AdLoader adLoader = new AdLoader.Builder(context, adsId)
                 .forNativeAd(nativeAd -> {
-                    NativeTemplateStyle styles = new
-                            NativeTemplateStyle.Builder()
-                            //.withMainBackgroundColor(new ColorDrawable(context.getColor(R.color.gnt_white)))
-                            //.withPrimaryTextTypeface(ResourcesCompat.getFont(context,R.font.google_sans))
-                            .build();
-
-                    //TemplateView template = findViewById(R.id.my_template);
-                    //templateView.setStyles(styles);
                     templateView.setNativeAd(nativeAd);
                 })
                 .withAdListener(new AdListener() {

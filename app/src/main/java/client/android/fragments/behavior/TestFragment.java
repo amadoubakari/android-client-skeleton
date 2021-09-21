@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.flys.notification.adapter.AdsNotificationAdapter;
+import com.flys.notification.adapter.AdsSimpleNotificationAdapter;
 import com.flys.notification.dialog.DialogStyle;
 import com.flys.tools.dialog.EditDialogFragment;
 import com.flys.tools.dialog.MaterialNotificationDialog;
@@ -48,7 +49,7 @@ import com.google.android.gms.ads.nativead.NativeAdOptions;
 
 @EFragment(R.layout.fragment_notif_layout)
 @OptionsMenu(R.menu.menu_vide)
-public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer, NotificationAdapter.NotificationOnclickListener {
+public class TestFragment extends AbstractFragment implements MaterialNotificationDialog.NotificationButtonOnclickListeneer, AdsSimpleNotificationAdapter.NotificationOnclickListener {
 
     @ViewById(R.id.recyclerview)
     RecyclerView recyclerView;
@@ -60,7 +61,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     MaterialNotificationDialog dialog;
     List<Notification> notifications;
-    private AdsNotificationAdapter notificationAdapter;
+    private AdsSimpleNotificationAdapter notificationAdapter;
     //@ViewById(R.id.my_template)
     //protected TemplateView myTemplateView;
 
@@ -127,15 +128,20 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
         for (int i = 0; i < 15; i++) {
             notifications.add(new Notification("Dubun Guiziga", "Animaux en Guiziga", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", null, new Date(), "amadou.jpg", null));
         }
-        notificationAdapter = new AdsNotificationAdapter(activity, notifications, new DialogStyle(activity.getColor(R.color.blue_500), activity.getColor(R.color.amber_400), R.font.google_sans),true, "ca-app-pub-3940256099942544/2247696110", new AdsNotificationAdapter.NotificationOnclickListener() {
+        notificationAdapter = new AdsSimpleNotificationAdapter(activity, notifications, new DialogStyle(activity.getColor(R.color.blue_500), activity.getColor(R.color.amber_400), R.font.google_sans), false, "ca-app-pub-3940256099942544/2247696110", new AdsSimpleNotificationAdapter.NotificationOnclickListener() {
             @Override
-            public void onButtonClickListener(int position) {
-
+            public void onShowMoreClickListener(int position) {
+                Toast.makeText(activity, "expand", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onMenuClickListener(View v, int position) {
+                Toast.makeText(activity, "menu", Toast.LENGTH_SHORT).show();
+            }
 
+            @Override
+            public void onShareClickListener(int adapterPosition) {
+                Toast.makeText(activity, "share", Toast.LENGTH_SHORT).show();
             }
         }
         );
@@ -228,7 +234,7 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
     }
 
     @Override
-    public void onButtonClickListener(int position) {
+    public void onShowMoreClickListener(int position) {
         NotificationDetailsDialogFragment notificationDetailsDialogFragment = NotificationDetailsDialogFragment.newInstance(activity, notifications.get(position), new DialogStyle(activity.getColor(R.color.blue_300)));
         notificationDetailsDialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.AppTheme);
         notificationDetailsDialogFragment.show(getActivity().getSupportFragmentManager(), "fragment_edit_name");
@@ -236,6 +242,11 @@ public class TestFragment extends AbstractFragment implements MaterialNotificati
 
     @Override
     public void onMenuClickListener(View v, int position) {
+
+    }
+
+    @Override
+    public void onShareClickListener(int adapterPosition) {
 
     }
 }

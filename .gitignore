@@ -64,6 +64,8 @@ obj/
 
 # User-specific configurations
 .gradle/*
+.gradle
+.idea
 .idea/*
 .idea/
 .idea/caches/*
