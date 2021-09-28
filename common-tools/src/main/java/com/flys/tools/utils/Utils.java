@@ -25,6 +25,7 @@ import androidx.core.app.TaskStackBuilder;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
+import com.flys.tools.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.BufferedReader;
@@ -67,7 +68,6 @@ public class Utils implements Serializable {
     }
 
     /**
-     *
      * @param context
      * @param menu
      * @param fontPath
@@ -103,13 +103,12 @@ public class Utils implements Serializable {
     }
 
     /**
-     *
      * @param context
      * @param mi
      * @param fontPath
      */
     private static void applyFontToMenuItem(Context context, MenuItem mi, int fontPath) {
-        Typeface font = ResourcesCompat.getFont(context,fontPath);
+        Typeface font = ResourcesCompat.getFont(context, fontPath);
         SpannableString mNewTitle = new SpannableString(mi.getTitle());
         mNewTitle.setSpan(new CustomTypefaceSpan("", font), 0, mNewTitle.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         mi.setTitle(mNewTitle);
@@ -266,7 +265,6 @@ public class Utils implements Serializable {
     }
 
     /**
-     *
      * @param url
      * @return
      */
@@ -293,29 +291,14 @@ public class Utils implements Serializable {
         return file.exists();
     }
 
-
-
-
-    public static void changeSearchTextColor(Context context, View view, int font) {
-        if (view != null) {
-            if (view instanceof TextView) {
-                ((TextView) view).setTextColor(ContextCompat.getColor(context, R.color.app_text_color));
-                ((TextView) view).setTextSize(16);
-                ((TextView) view).setTypeface(ResourcesCompat.getFont(context, font));
-                view.setBackgroundColor(ContextCompat.getColor(context, R.color.app_background_color));
-            } else if (view instanceof ViewGroup) {
-                ViewGroup viewGroup = (ViewGroup) view;
-                for (int i = 0; i < viewGroup.getChildCount(); i++) {
-                    changeSearchTextColor(context, viewGroup.getChildAt(i), font);
-                }
-            }
-        }
-    }
-
-
-    public static int getThemeAccentColor (final Context context) {
-        final TypedValue value = new TypedValue ();
-        context.getTheme ().resolveAttribute (androidx.core.R.attr.colorAccent, value, true);
+    /**
+     *
+     * @param context
+     * @return
+     */
+    public static int getThemeAccentColor(final Context context, int colorAccent) {
+        final TypedValue value = new TypedValue();
+        context.getTheme().resolveAttribute(colorAccent, value, true);
         return value.data;
     }
 
@@ -324,30 +307,19 @@ public class Utils implements Serializable {
      * @param view
      * @param font
      */
-    public static void changeSearchTextColor(Context context, View view, int font) {
+    public static void changeSearchTextColor(Context context, View view, int font, int fontSize, int textColor, int backgroundColor) {
         if (view != null) {
             if (view instanceof TextView) {
-                ((TextView) view).setTextColor(ContextCompat.getColor(context, R.color.app_text_color));
-                ((TextView) view).setTextSize(16);
+                ((TextView) view).setTextColor(ContextCompat.getColor(context, textColor));
+                ((TextView) view).setTextSize(fontSize);
                 ((TextView) view).setTypeface(ResourcesCompat.getFont(context, font));
-                view.setBackgroundColor(ContextCompat.getColor(context, R.color.app_background_color));
+                view.setBackgroundColor(ContextCompat.getColor(context, backgroundColor));
             } else if (view instanceof ViewGroup) {
                 ViewGroup viewGroup = (ViewGroup) view;
                 for (int i = 0; i < viewGroup.getChildCount(); i++) {
-                    changeSearchTextColor(context, viewGroup.getChildAt(i), font);
+                    changeSearchTextColor(context, viewGroup.getChildAt(i), font,fontSize,textColor,backgroundColor);
                 }
             }
         }
-    }
-
-    /**
-     *
-     * @param context
-     * @param activityClass
-     */
-    public static void restartApplication(DApplicationContext context, Class activityClass) {
-        TaskStackBuilder.create(context)
-                .addNextIntent(new Intent(context, activityClass))
-                .startActivities();
     }
 }

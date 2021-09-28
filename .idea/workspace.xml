@@ -10,32 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="347c4a97-8c95-4fd3-adf1-88e3beca35bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/AdsSimpleNotificationAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/hp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_baseline_circle_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_outline_more_vert_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/ic_outline_share_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/drawable/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_simple_ads_notification_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_simple_notification_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-ads/src/main/res/drawable/ic_baseline_circle_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-ads/src/main/res/drawable/ic_outline_more_vert_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-ads/src/main/res/drawable/ic_outline_share_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google-ads/src/main/res/layout/gnt_ads_view_simple_notification_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-authentication/src/main/java/com/flys/auth/PersonFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/TestFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/TestFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/java/com/flys/tools/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/domain/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/domain/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_notification_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/res/layout/view_notification_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-ads/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-ads/src/main/java/com/flys/google/ads/TemplateView.java" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/java/com/flys/google/ads/TemplateView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-ads/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/google-ads/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-authentication/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +39,51 @@
         <task path="$PROJECT_DIR$/fcm-notification-module">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/common-tools">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
+                <item name="common-tools" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
+                <item name="common-tools" type="2d1252cf:ModuleNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
+                <item name="fcm-notification-module" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android-client-skeleton" type="f1a62948:ProjectNode" />
+                <item name="fcm-notification-module" type="2d1252cf:ModuleNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,7 +118,7 @@
       <recent name="C:\projects\android\android-client-skeleton\fcm-notification-module\src\main\res\drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]">
+  <component name="RunManager" selected="Gradle.android-client-skeleton:common-tools [publishToMavenLocal]">
     <configuration name="All in android-client-skeleton.fcm-notification-module" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="android-client-skeleton.fcm-notification-module" />
       <option name="PACKAGE_NAME" value="" />
@@ -173,6 +192,44 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="android-client-skeleton:common-tools [publishDebugPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common-tools" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishDebugPublicationToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="android-client-skeleton:common-tools [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common-tools" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="android-client-skeleton:fcm-notification-module [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -213,6 +270,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.android-client-skeleton:common-tools [publishToMavenLocal]" />
+        <item itemvalue="Gradle.android-client-skeleton:common-tools [publishDebugPublicationToMavenLocal]" />
         <item itemvalue="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]" />
         <item itemvalue="Gradle.android-client-skeleton:google-ads [publishToMavenLocal]" />
         <item itemvalue="Android JUnit.All in android-client-skeleton.fcm-notification-module" />
@@ -233,50 +292,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="157" y="86" key="#PSD" timestamp="1614000207231">
+    <state width="1218" height="233" key="GridCell.Tab.0.bottom" timestamp="1632778694883">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="157" y="86" key="#PSD/0.0.1280.680@0.0.1280.680" timestamp="1614000207231" />
-    <state x="445" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1615890441093">
+    <state width="1218" height="233" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632778694883" />
+    <state width="1218" height="233" key="GridCell.Tab.0.center" timestamp="1632778694883">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="445" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1615890441093" />
-    <state x="320" y="76" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1619170871183">
+    <state width="1218" height="233" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632778694883" />
+    <state width="1218" height="233" key="GridCell.Tab.0.left" timestamp="1632778694883">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="320" y="76" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1619170871183" />
-    <state x="220" y="95" key="AndroidCreateResourceDirectoryDialog" timestamp="1619559448486">
+    <state width="1218" height="233" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632778694883" />
+    <state width="1218" height="233" key="GridCell.Tab.0.right" timestamp="1632778694883">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="220" y="95" key="AndroidCreateResourceDirectoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1619559448486" />
-    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1613989238739">
+    <state width="1218" height="233" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632778694883" />
+    <state x="220" y="83" key="IDE.errors.dialog" timestamp="1632771725406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1613989238739" />
-    <state width="1236" height="237" key="GridCell.Tab.0.bottom" timestamp="1620103183362">
+    <state x="220" y="83" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1632771725406" />
+    <state x="344" y="73" width="589" height="534" key="find.popup" timestamp="1632748014148">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="237" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620103183362" />
-    <state width="1236" height="237" key="GridCell.Tab.0.center" timestamp="1620103183362">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1236" height="237" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1620103183362" />
-    <state width="1236" height="237" key="GridCell.Tab.0.left" timestamp="1620103183361">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1236" height="237" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1620103183361" />
-    <state width="1236" height="237" key="GridCell.Tab.0.right" timestamp="1620103183362">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1236" height="237" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1620103183362" />
-    <state x="344" y="73" width="589" height="534" key="find.popup" timestamp="1619695192797">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="344" y="73" width="589" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1619695192797" />
-    <state x="297" y="153" key="run.anything.popup" timestamp="1620710632897">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="297" y="153" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1620710632897" />
+    <state x="344" y="73" width="589" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1632748014148" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/android_client_skeleton$All_in_android_client_skeleton_fcm_notification_module.ic" NAME="All in android-client-skeleton.fcm-notification-module Coverage Results" MODIFIED="1615185689520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
