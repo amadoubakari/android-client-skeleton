@@ -38,6 +38,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            resValue "string", "app_name", "@string/app_name_debug"
+        }
     }
     // options de packaging nécessaires pour être capable de produire l'APK
     packagingOptions {

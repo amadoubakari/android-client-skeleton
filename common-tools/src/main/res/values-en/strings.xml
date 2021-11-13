@@ -5,4 +5,5 @@
     <string name="dialog_fragment_layout_recommend_msg">A word to your beneficiary ?</string>
     <string name="activity_main_username">Username</string>
     <string name="activity_main_email_address">Email</string>
+    <string name="about_last_update_msg">Date de mise à jour</string>
 </resources>

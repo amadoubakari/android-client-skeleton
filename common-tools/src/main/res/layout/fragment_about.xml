@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/about_fragment_container"
+    android:id="@+id/linearLayout95"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/app_background_color"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:layout_marginBottom="10dp">
@@ -25,11 +26,12 @@
         <View
             android:layout_width="1dp"
             android:layout_height="56dp"
-          />
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="?attr/app_name"
+            android:textColor="?attr/app_text_color"
             android:fontFamily="?attr/fontFamily"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -40,7 +42,7 @@
             android:layout_height="2dp"
             android:layout_marginTop="@dimen/spacing_medium"
             android:layout_marginBottom="@dimen/spacing_medium"
-            android:background="?attr/colorPrimary" />
+            android:background="?attr/colorSecondary" />
 
         <View
             android:layout_width="0dp"
@@ -57,16 +59,15 @@
                 android:text="Version"
                 android:fontFamily="?attr/fontFamily"
                 android:textSize="14sp"
-                />
+                android:textColor="?attr/app_text_color" />
 
             <TextView
-                android:id="@+id/about_fragment_app_version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="?app_version"
+                android:text="?attr/app_version"
                 android:fontFamily="?attr/fontFamily"
                 android:textSize="14sp"
-                android:textColor="?attr/colorPrimary" />
+                android:textColor="?attr/colorSecondary" />
 
         </LinearLayout>
 
@@ -80,22 +81,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/about_fragment_app_update_msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/about_last_update_msg"
                 android:fontFamily="?attr/fontFamily"
                 android:textSize="14sp"
-                android:text="Last update"
-                />
+                android:textColor="?attr/app_text_color" />
 
             <TextView
-                android:id="@+id/about_fragment_app_release_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="?attr/fontFamily"
-                android:text="11-12-2019"
+                android:text="?attr/releasing_date"
                 android:textSize="14sp"
-                android:textColor="?attr/colorPrimary"/>
+                android:textColor="?attr/colorSecondary" />
 
         </LinearLayout>
 
@@ -104,12 +103,12 @@
             android:layout_height="@dimen/spacing_mxlarge" />
 
         <TextView
-            android:id="@+id/about_fragment_app_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text="?attr/app_description"
             android:fontFamily="?attr/fontFamily"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:textColor="?attr/app_text_color" />
 
         <View
             android:layout_width="0dp"
@@ -120,6 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Open source ici"
+            android:textColor="?attr/app_text_color"
             android:fontFamily="?attr/fontFamily"
             android:textSize="14sp" />
 
@@ -150,8 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05"
-        />
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline95"
@@ -165,10 +164,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="https_site_kyossi_com"
-        android:fontFamily="?attr/fontFamily"
+        android:text="@string/https_site_kyossi_com"
         android:textSize="14sp"
-        android:textColor="?attr/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/guideline95"
         app:layout_constraintHorizontal_bias="1.0"

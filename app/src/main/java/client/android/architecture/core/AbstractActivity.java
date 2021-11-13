@@ -261,6 +261,9 @@ public abstract class AbstractActivity extends AppCompatActivity implements IMai
                         case R.id.menu_recommander:
                             showEditDialog();
                             break;
+                        case R.id.menu_bible:
+                        navigateToView(2, ISession.Action.SUBMIT);
+                        break;
                         default:
                             break;
                     }

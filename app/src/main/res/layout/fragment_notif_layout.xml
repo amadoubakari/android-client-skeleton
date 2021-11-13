@@ -7,12 +7,25 @@
     android:orientation="vertical">
 
 
+    <TextView
+        android:layout_width="397dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="14dp"
+        android:textColor="@color/blue_500"
+        android:text="?attr/app_name" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="56dp"
-        android:clipToPadding="false"/>
+        android:layout_marginTop="63dp"
+        android:clipToPadding="false"
+        android:paddingTop="56dp" />
     <!--  This is your template view -->
     <LinearLayout
         android:id="@+id/notification_not_found_msg_id"
