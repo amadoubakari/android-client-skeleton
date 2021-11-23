@@ -11,23 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="347c4a97-8c95-4fd3-adf1-88e3beca35bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/client/android/fragments/behavior/AboutFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/architecture/core/AbstractActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/architecture/core/AbstractActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/client/android/architecture/custom/IMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/client/android/architecture/custom/IMainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notif_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notif_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_about.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/layout/fragment_about.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values-fr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values-fr/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-tools/src/main/res/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-tools/src/main/res/values/values.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
