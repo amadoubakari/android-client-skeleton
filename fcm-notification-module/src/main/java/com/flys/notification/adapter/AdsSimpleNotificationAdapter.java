@@ -112,12 +112,8 @@ public class AdsSimpleNotificationAdapter extends RecyclerView.Adapter<RecyclerV
      */
     @Override
     public int getItemViewType(int position) {
-        if (isConnected) {
-            if (position % 2 == 0) {
-                return SIMPLE_VIEW_ITEM;
-            } else {
-                return ADS_ITEM_VIEW;
-            }
+        if (isConnected && notifications.get(position) == null) {
+            return ADS_ITEM_VIEW;
         } else {
             return SIMPLE_VIEW_ITEM;
         }

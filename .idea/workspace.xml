@@ -15,6 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/AdsSimpleNotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/adapter/AdsSimpleNotificationAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/fcm-notification-module/src/main/java/com/flys/notification/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +119,7 @@
       <recent name="C:\projects\android\android-client-skeleton\fcm-notification-module\src\main\res\drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.android-client-skeleton:common-tools [publishToMavenLocal]">
+  <component name="RunManager" selected="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]">
     <configuration name="All in android-client-skeleton.fcm-notification-module" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="android-client-skeleton.fcm-notification-module" />
       <option name="PACKAGE_NAME" value="" />
@@ -268,9 +271,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]" />
         <item itemvalue="Gradle.android-client-skeleton:common-tools [publishToMavenLocal]" />
         <item itemvalue="Gradle.android-client-skeleton:common-tools [publishDebugPublicationToMavenLocal]" />
-        <item itemvalue="Gradle.android-client-skeleton:fcm-notification-module [publishToMavenLocal]" />
         <item itemvalue="Gradle.android-client-skeleton:google-ads [publishToMavenLocal]" />
         <item itemvalue="Android JUnit.All in android-client-skeleton.fcm-notification-module" />
       </list>
@@ -290,26 +293,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="444" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1638012670310">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="444" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1638012670310" />
     <state x="486" y="143" key="AndroidCreateXmlResourceDialog" timestamp="1635269409656">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="486" y="143" key="AndroidCreateXmlResourceDialog/0.0.1280.680@0.0.1280.680" timestamp="1635269409655" />
-    <state width="1215" height="66" key="GridCell.Tab.0.bottom" timestamp="1635399238172">
+    <state width="1216" height="258" key="GridCell.Tab.0.bottom" timestamp="1637731874951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1215" height="66" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1635399238172" />
-    <state width="1215" height="66" key="GridCell.Tab.0.center" timestamp="1635399238172">
+    <state width="1216" height="258" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1637731874951" />
+    <state width="1216" height="258" key="GridCell.Tab.0.center" timestamp="1637731874951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1215" height="66" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1635399238172" />
-    <state width="1215" height="66" key="GridCell.Tab.0.left" timestamp="1635399238172">
+    <state width="1216" height="258" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1637731874951" />
+    <state width="1216" height="258" key="GridCell.Tab.0.left" timestamp="1637731874950">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1215" height="66" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1635399238172" />
-    <state width="1215" height="66" key="GridCell.Tab.0.right" timestamp="1635399238172">
+    <state width="1216" height="258" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1637731874950" />
+    <state width="1216" height="258" key="GridCell.Tab.0.right" timestamp="1637731874951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1215" height="66" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1635399238172" />
+    <state width="1216" height="258" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1637731874951" />
     <state x="220" y="83" key="IDE.errors.dialog" timestamp="1632771725406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -318,10 +325,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632833450774" />
-    <state x="344" y="73" width="589" height="534" key="find.popup" timestamp="1632748014148">
+    <state x="344" y="73" width="589" height="534" key="find.popup" timestamp="1638013220572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="344" y="73" width="589" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1632748014148" />
+    <state x="344" y="73" width="589" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1638013220572" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/android_client_skeleton$All_in_android_client_skeleton_fcm_notification_module.ic" NAME="All in android-client-skeleton.fcm-notification-module Coverage Results" MODIFIED="1615185689520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -5,6 +5,7 @@ import android.content.ContextWrapper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.util.Log;
 import android.view.View;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -23,6 +24,7 @@ import java.io.FileNotFoundException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.logging.Logger;
 
 /**
  * @author AMADOU BAKARI
@@ -88,6 +90,7 @@ public class Utils implements Serializable {
                 .withAdListener(new AdListener() {
                     @Override
                     public void onAdFailedToLoad(LoadAdError adError) {
+                        Log.e(getClass().getSimpleName(),"ads loading error "+adError.getResponseInfo());
                         adsNotificationContainer.setVisibility(View.GONE);
                         // Handle the failure by logging, altering the UI, and so on.
                     }
